@@ -62,4 +62,6 @@ outputs/
 .cache/
 *.cache
 
-credentials/*.json
+
+
+hooper-glean/shared_utils/credentials/
