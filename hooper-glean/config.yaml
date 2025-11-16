@@ -1,0 +1,15 @@
+frame_sample_rate: 2 # used to decide how many frames to process in a clip
+context_window: 4 # used to decide clip length around a center timestamp
+min_detect_shot_score: 0.5 # density cutoff in component analysis for shot detection
+min_shot_score: 0.5 # used in video shot classification
+min_hoop_fast_score: 0.3 # used in hoop detection
+min_hoop_slow_score: 0.8 # used in hoop detection
+min_ball_score: 0.2 # used in ball detection
+min_person_box_score: 0.1 # used in person detection
+min_segment_skeleton_iou: 0.6 # used in person keypoint detection
+hoop_fast_stride: 30 # run hoop detection every 0.5 second
+hoop_slow_stride: 300 # run hoop detection every 10 seconds
+dist_pixel_thres: 10 # used in possession assignment
+min_person_keypoint_score: 0.1 # used in possession assignment
+max_ball_person_ratio: 30 # used in possession assignment
+min_cluster_samples: 10 # used in embedding clustering

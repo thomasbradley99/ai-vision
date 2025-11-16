@@ -1,0 +1,32 @@
+const groundTruthData = {
+  "video_name": "ryan-thomas",
+  "description": "Thomas vs Ryan",
+  "duration_seconds": 318,
+  "submissions": [
+    {
+      "timestamp": 68,
+      "type": "armbar",
+      "notes": "1:08 - Ryan armbars Thomas"
+    },
+    {
+      "timestamp": 155,
+      "type": "armbar",
+      "notes": "2:35 - Ryan armbars Thomas"
+    },
+    {
+      "timestamp": 185,
+      "type": "choke",
+      "notes": "3:05 - Ryan chokes Thomas"
+    },
+    {
+      "timestamp": 267,
+      "type": "armbar",
+      "notes": "4:27 - Ryan armbars Thomas"
+    },
+    {
+      "timestamp": 318,
+      "type": "choke",
+      "notes": "5:18 - Ryan chokes Thomas"
+    }
+  ]
+};

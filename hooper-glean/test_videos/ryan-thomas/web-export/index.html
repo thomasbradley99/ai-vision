@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ Training Analysis Viewer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .subtitle {
+            color: #aaa;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .layout {
+            display: grid;
+            grid-template-columns: 400px 1fr 400px;
+            gap: 20px;
+        }
+        
+        @media (max-width: 1400px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Video Section */
+        .video-section {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        
+        video {
+            width: 100%;
+            border-radius: 8px;
+            background: #000;
+            max-height: 70vh;
+        }
+        
+        .video-controls {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .time-display {
+            background: #2a2a2a;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6b35;
+        }
+        
+        button {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        button:hover {
+            background: #ff5722;
+            transform: translateY(-1px);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .panel {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        
+        .panel h2 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: #ff6b35;
+            border-bottom: 2px solid #2a2a2a;
+            padding-bottom: 10px;
+        }
+        
+        /* Fighter Stats */
+        .fighter-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .fighter-card {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .fighter-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff6b35;
+        }
+        
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+        
+        .stat-label {
+            color: #aaa;
+        }
+        
+        .stat-value {
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        /* Submissions List */
+        .submissions-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .submission-item {
+            background: #2a2a2a;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 4px solid #4CAF50;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .submission-item:hover {
+            background: #333;
+            transform: translateX(4px);
+        }
+        
+        .submission-item.active {
+            border-left-color: #ff6b35;
+            background: #3a2a2a;
+        }
+        
+        .submission-item.correct {
+            border-left-color: #4CAF50;
+        }
+        
+        .submission-item.wrong {
+            border-left-color: #f44336;
+        }
+        
+        .submission-item.missed {
+            border-left-color: #FFC107;
+            opacity: 0.7;
+        }
+        
+        .match-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        .match-badge.correct {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .match-badge.wrong {
+            background: #f44336;
+            color: white;
+        }
+        
+        .match-badge.missed {
+            background: #FFC107;
+            color: black;
+        }
+        
+        .eval-stat {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 16px;
+        }
+        
+        .eval-stat .label {
+            color: #aaa;
+        }
+        
+        .eval-stat .value {
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .submission-time {
+            color: #ff6b35;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .submission-type {
+            margin: 5px 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .submission-desc {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        
+        /* Key Moments */
+        .key-moment-item {
+            background: #2a2a2a;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 4px solid #2196F3;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .key-moment-item:hover {
+            background: #333;
+            transform: translateX(4px);
+        }
+        
+        .moment-importance {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        /* Scrollbars */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #ff6b35;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff5722;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 1200px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🥋 BJJ Training Analysis</h1>
+        <p class="subtitle">AI-Powered Analysis with 3-Stage Coherent Narrative Pipeline</p>
+        
+        <div class="layout">
+            <!-- Left: Ground Truth -->
+            <div class="sidebar">
+                <div class="panel">
+                    <h2>✅ GROUND TRUTH</h2>
+                    <div class="submissions-list" id="groundTruthList">
+                        Loading ground truth...
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Center: Video -->
+            <div class="video-section">
+                <video id="videoPlayer" controls>
+                    <source src="video.mov" type="video/mp4">
+                    Your browser doesn't support video playback.
+                </video>
+                
+                <div class="video-controls">
+                    <div class="time-display" id="timeDisplay">00:00 / 00:00</div>
+                    <button onclick="jumpTo(0)">⏮ Start</button>
+                    <button onclick="skip(-10)">⏪ -10s</button>
+                    <button onclick="skip(-5)">◀ -5s</button>
+                    <button onclick="skip(5)">▶ +5s</button>
+                    <button onclick="skip(10)">⏩ +10s</button>
+                    <button onclick="videoPlayer.playbackRate = 0.5">0.5x</button>
+                    <button onclick="videoPlayer.playbackRate = 1.0">1x</button>
+                    <button onclick="videoPlayer.playbackRate = 2.0">2x</button>
+                </div>
+                
+                <!-- Observations Below Video -->
+                <div class="panel" style="margin-top: 20px;">
+                    <h2>📝 Clip Observations</h2>
+                    <div id="observationsDisplay" style="max-height: 400px; overflow-y: auto; font-size: 13px; line-height: 1.6;">
+                        Loading observations...
+                    </div>
+                </div>
+                
+                <!-- Stats Comparison -->
+                <div class="panel" style="margin-top: 20px;">
+                    <h2>📊 Evaluation</h2>
+                    <div id="evaluationStats">Loading...</div>
+                </div>
+            </div>
+            
+            <!-- Right: AI Detected -->
+            <div class="sidebar">
+                <div class="panel">
+                    <h2>🤖 AI DETECTED</h2>
+                    <div class="submissions-list" id="aiSubmissionsList">
+                        Loading AI detections...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Data Files -->
+    <script src="ai_events_data.js"></script>
+    <script src="key_moments_data.js"></script>
+    <script src="ground_truth_data.js"></script>
+    <script src="evaluation_data.js"></script>
+    <script src="observations_data.js"></script>
+
+    <script>
+        const videoPlayer = document.getElementById('videoPlayer');
+        const timeDisplay = document.getElementById('timeDisplay');
+        
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+        
+        videoPlayer.addEventListener('timeupdate', function() {
+            const current = videoPlayer.currentTime;
+            const duration = videoPlayer.duration || 0;
+            timeDisplay.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
+            updateActiveEvents(current);
+        });
+        
+        videoPlayer.addEventListener('loadedmetadata', function() {
+            console.log('✅ Video loaded, duration:', videoPlayer.duration);
+        });
+        
+        videoPlayer.addEventListener('error', function(e) {
+            console.error('❌ Video error:', e);
+            timeDisplay.textContent = 'Video failed to load';
+        });
+        
+        function jumpTo(seconds) {
+            if (!videoPlayer || isNaN(videoPlayer.duration)) {
+                console.error('Video not ready');
+                return;
+            }
+            console.log(`⏭️ Jumping to ${seconds}s (was at ${videoPlayer.currentTime}s)`);
+            videoPlayer.currentTime = seconds;
+            console.log(`   Set to ${videoPlayer.currentTime}s`);
+            videoPlayer.play().catch(err => {
+                console.error('Play failed:', err);
+            });
+        }
+        
+        function skip(seconds) {
+            if (!videoPlayer || isNaN(videoPlayer.duration)) {
+                console.error('Video not ready');
+                return;
+            }
+            const newTime = videoPlayer.currentTime + seconds;
+            console.log(`⏩ Skipping ${seconds}s (${videoPlayer.currentTime}s → ${newTime}s)`);
+            videoPlayer.currentTime = newTime;
+        }
+        
+        window.addEventListener('load', function() {
+            console.log('🥋 BJJ Viewer loaded');
+            renderGroundTruth();
+            renderAISubmissions();
+            renderEvaluationStats();
+            renderObservations();
+        });
+        
+        // Render ground truth (left side)
+        function renderGroundTruth() {
+            const container = document.getElementById('groundTruthList');
+            
+            if (!groundTruthData || !groundTruthData.submissions || groundTruthData.submissions.length === 0) {
+                container.innerHTML = '<div style="color: #aaa; padding: 10px;">No ground truth available</div>';
+                return;
+            }
+            
+            const subs = groundTruthData.submissions;
+            const matches = evaluationData.matches?.matches || [];
+            
+            container.innerHTML = subs.map((sub, index) => {
+                const matched = matches.find(m => m.ground_truth.timestamp === sub.timestamp);
+                const cssClass = matched ? 'correct' : 'missed';
+                const badge = matched ? '<span class="match-badge correct">✓ FOUND</span>' : '<span class="match-badge missed">⚠ MISSED</span>';
+                
+                return `
+                    <div class="submission-item ${cssClass}" onclick="jumpTo(${sub.timestamp})">
+                        <div class="submission-time">${formatTime(sub.timestamp)} ${badge}</div>
+                        <div class="submission-type">${sub.type}</div>
+                        <div class="submission-desc">${sub.notes || ''}</div>
+                    </div>
+                `;
+            }).join('');
+            
+            console.log(`✅ Rendered ${subs.length} ground truth submissions`);
+        }
+        
+        // Render AI submissions (right side)
+        function renderAISubmissions() {
+            const container = document.getElementById('aiSubmissionsList');
+            
+            if (!evaluationData || !evaluationData.detected) {
+                container.innerHTML = '<div style="color: #aaa; padding: 10px;">No AI detections</div>';
+                return;
+            }
+            
+            const subs = evaluationData.detected;
+            const matches = evaluationData.matches?.matches || [];
+            
+            container.innerHTML = subs.map((sub, index) => {
+                const matched = matches.find(m => m.detected.timestamp === sub.timestamp);
+                const cssClass = matched ? 'correct' : 'wrong';
+                const badge = matched ? '<span class="match-badge correct">✓ CORRECT</span>' : '<span class="match-badge wrong">✗ FALSE</span>';
+                
+                return `
+                    <div class="submission-item ${cssClass}" onclick="jumpTo(${sub.timestamp})">
+                        <div class="submission-time">${formatTime(sub.timestamp)} ${badge}</div>
+                        <div class="submission-type">${sub.type}</div>
+                        <div class="submission-desc">${sub.attacker}</div>
+                    </div>
+                `;
+            }).join('');
+            
+            console.log(`✅ Rendered ${subs.length} AI detections`);
+        }
+        
+        // Render evaluation stats (center)
+        function renderEvaluationStats() {
+            const container = document.getElementById('evaluationStats');
+            
+            if (!evaluationData || !evaluationData.metrics) {
+                container.innerHTML = '<div style="color: #aaa;">No evaluation data</div>';
+                return;
+            }
+            
+            const m = evaluationData.metrics;
+            
+            container.innerHTML = `
+                <div class="eval-stat">
+                    <span class="label">True Positives:</span>
+                    <span class="value" style="color: #4CAF50;">${m.true_positives}</span>
+                </div>
+                <div class="eval-stat">
+                    <span class="label">False Positives:</span>
+                    <span class="value" style="color: #f44336;">${m.false_positives}</span>
+                </div>
+                <div class="eval-stat">
+                    <span class="label">False Negatives:</span>
+                    <span class="value" style="color: #FFC107;">${m.false_negatives}</span>
+                </div>
+                <hr style="border-color: #333; margin: 10px 0;">
+                <div class="eval-stat">
+                    <span class="label">Precision:</span>
+                    <span class="value">${(m.precision * 100).toFixed(1)}%</span>
+                </div>
+                <div class="eval-stat">
+                    <span class="label">Recall:</span>
+                    <span class="value">${(m.recall * 100).toFixed(1)}%</span>
+                </div>
+                <div class="eval-stat">
+                    <span class="label">F1 Score:</span>
+                    <span class="value">${m.f1_score.toFixed(3)}</span>
+                </div>
+            `;
+        }
+        
+        function updateActiveEvents(currentTime) {
+            const allItems = document.querySelectorAll('.submission-item');
+            allItems.forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+        
+        // Render observations below video
+        function renderObservations() {
+            const container = document.getElementById('observationsDisplay');
+            
+            if (!observationsText) {
+                container.innerHTML = '<div style="color: #aaa;">No observations available</div>';
+                return;
+            }
+            
+            // Split by clip sections
+            const clips = observationsText.split(/---+/);
+            
+            container.innerHTML = clips.map(clip => {
+                if (!clip.trim()) return '';
+                
+                // Parse clip header [XXXs] clip_name
+                const lines = clip.trim().split('\n');
+                const header = lines[0];
+                const content = lines.slice(1).join('\n');
+                
+                return `
+                    <div style="background: #2a2a2a; padding: 15px; margin-bottom: 15px; border-radius: 6px; border-left: 4px solid #ff6b35;">
+                        <div style="color: #ff6b35; font-weight: bold; margin-bottom: 10px; font-family: 'Courier New', monospace;">
+                            ${header}
+                        </div>
+                        <div style="color: #ccc; white-space: pre-wrap;">
+                            ${content}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            console.log(`✅ Rendered observations`);
+        }
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,1 @@
+{"max_candidates": 20, "learning_rate": 0.0005, "emb_inter_weight": 0, "emb_intra_weight": 1, "cls_ball_weight": 1, "cls_holder_weight": 1, "num_epochs": 200, "batch_size": 32}

@@ -1,0 +1,27 @@
+{
+  "video_name": "chris-instructor",
+  "description": "Instructor vs Chris (white belt)",
+  "duration_seconds": null,
+  "submissions": [
+    {
+      "timestamp": 141,
+      "type": "rear-naked choke",
+      "notes": "2:21 - Instructor taps Chris with RNC from back control"
+    },
+    {
+      "timestamp": 204,
+      "type": "americana",
+      "notes": "3:24 - Instructor taps Chris with Americana from mount"
+    },
+    {
+      "timestamp": 231,
+      "type": "triangle/pressure",
+      "notes": "3:51 - Instructor taps Chris with triangle head pressure"
+    },
+    {
+      "timestamp": 291,
+      "type": "smother",
+      "notes": "4:51 - Instructor taps Chris with smother from mount"
+    }
+  ]
+}

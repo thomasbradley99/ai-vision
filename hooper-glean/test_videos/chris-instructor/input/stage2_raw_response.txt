@@ -1,0 +1,2253 @@
+```json
+{
+  "events": [
+    {
+      "timestamp": 7.0,
+      "type": "TAKEDOWN",
+      "title": "WHITE GI initiates ground engagement",
+      "description": "DARK GI offers fist bump, WHITE GI sits down, preparing to establish guard.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Efficiently transitions to his preferred ground game by sitting to establish guard.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Accepts the ground engagement and prepares to pass guard.",
+          "betterMove": "Could have tried to secure grips before WHITE GI sat to establish an immediate passing advantage.",
+          "whyBad": null
+        }
+      },
+      "event_index": 0
+    },
+    {
+      "timestamp": 22.0,
+      "type": "POSITION",
+      "title": "DARK GI attempts guard pass",
+      "description": "DARK GI attempts to pass WHITE GI's open guard. WHITE GI defends using legs and hips, seeking sweeps/submissions.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Aggressively works to pass open guard, showing intent and pressure.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 85,
+          "points": 0,
+          "analysis": "Effectively defends open guard, maintaining distance and control with active legs and hips, while actively looking for offensive opportunities.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 1
+    },
+    {
+      "timestamp": 44.5,
+      "type": "SWEEP",
+      "title": "WHITE GI sweeps DARK GI to Knee-on-Belly",
+      "description": "WHITE GI successfully sweeps DARK GI from open guard, lands in dominant position, transitions to side control, then knee-on-belly.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 4,
+          "analysis": "Executes a clean sweep from open guard and immediately capitalizes by advancing to knee-on-belly.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "mistake",
+          "score": 40,
+          "points": 0,
+          "analysis": "Lost balance during guard pass attempt and was swept, then failed to prevent position advancement to knee-on-belly.",
+          "betterMove": "Should have maintained better posture and base during the guard pass, and framed/escaped side control more effectively.",
+          "whyBad": "Failed to recognize and counter the sweep attempt, then conceded dominant positions without significant defense."
+        }
+      },
+      "event_index": 2
+    },
+    {
+      "timestamp": 62.0,
+      "type": "SUBMISSION",
+      "title": "WHITE GI submits DARK GI via head-and-arm choke",
+      "description": "WHITE GI achieves full mount on DARK GI, then secures a head-and-arm choke, leading to DARK GI's tap.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 100,
+          "points": 14,
+          "analysis": "Achieves full mount and rapidly transitions to a dominant submission, demonstrating high-level finishing ability.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "blunder",
+          "score": 10,
+          "points": 0,
+          "analysis": "Allowed mount to be established, then failed to defend the head-and-arm choke effectively.",
+          "betterMove": "Should have focused on mount escape immediately upon concession, and applied defensive frames/posture to prevent the choke setup.",
+          "whyBad": "Failure to prevent mount, then poor defense leading directly to submission."
+        }
+      },
+      "event_index": 3
+    },
+    {
+      "timestamp": 135.0,
+      "type": "RESET",
+      "title": "Both athletes reset",
+      "description": "Both athletes disengage, stand up, and reset, following WHITE GI's successful armbar defense and escape.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Resets for the next exchange.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Resets after a successful defense.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 4
+    },
+    {
+      "timestamp": 82.5,
+      "type": "POSITION",
+      "title": "WHITE GI establishes side control",
+      "description": "WHITE GI starts in side control over DARK GI.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Starts the roll in a dominant side control position, ready to advance.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Starts the roll on his back, defending side control.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 5
+    },
+    {
+      "timestamp": 87.5,
+      "type": "POSITION",
+      "title": "WHITE GI transitions to mount",
+      "description": "WHITE GI transitions from side control to mount on DARK GI.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 4,
+          "analysis": "Successfully transitions from side control to full mount, a highly dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "mistake",
+          "score": 35,
+          "points": 0,
+          "analysis": "Fails to prevent the mount transition from side control.",
+          "betterMove": "Should have framed and created space to escape side control before the mount was established.",
+          "whyBad": "Conceded mount from side control."
+        }
+      },
+      "event_index": 6
+    },
+    {
+      "timestamp": 92.5,
+      "type": "SWEEP",
+      "title": "DARK GI sweeps WHITE GI from mount",
+      "description": "DARK GI executes a sweep from the bottom of mount, reversing WHITE GI and landing in a top open guard passing position.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 2,
+          "analysis": "Demonstrates strong defensive and offensive skills by sweeping from the highly vulnerable mount bottom.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 40,
+          "points": 0,
+          "analysis": "Fails to maintain mount, getting swept by DARK GI.",
+          "betterMove": "Should have maintained a tighter base and posture in mount to prevent the sweep.",
+          "whyBad": "Lost mount due to a successful sweep."
+        }
+      },
+      "event_index": 7
+    },
+    {
+      "timestamp": 97.5,
+      "type": "POSITION",
+      "title": "DARK GI passes WHITE GI's open guard",
+      "description": "DARK GI passes WHITE GI's open guard.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 3,
+          "analysis": "Successfully passes WHITE GI's open guard, securing a dominant top position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 45,
+          "points": 0,
+          "analysis": "Fails to defend his open guard against DARK GI's pass.",
+          "betterMove": "Should have maintained active hooks and frames to prevent the guard pass.",
+          "whyBad": "Conceded guard pass."
+        }
+      },
+      "event_index": 8
+    },
+    {
+      "timestamp": 102.5,
+      "type": "POSITION",
+      "title": "DARK GI establishes side control",
+      "description": "DARK GI establishes side control on WHITE GI.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 80,
+          "points": 0,
+          "analysis": "Consolidates the guard pass by establishing firm side control.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 60,
+          "points": 0,
+          "analysis": "Defends from bottom side control, attempting to escape.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 9
+    },
+    {
+      "timestamp": 107.5,
+      "type": "POSITION",
+      "title": "DARK GI maintains side control",
+      "description": "DARK GI maintains side control.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Demonstrates good control by maintaining side control for an extended period.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Continues to defend from bottom side control, looking for an escape.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 10
+    },
+    {
+      "timestamp": 112.5,
+      "type": "POSITION",
+      "title": "DARK GI transitions to knee-on-belly",
+      "description": "DARK GI transitions from side control to knee-on-belly on WHITE GI.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully transitions from side control to knee-on-belly, gaining additional points and pressure.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 40,
+          "points": 0,
+          "analysis": "Fails to prevent the transition from side control to knee-on-belly.",
+          "betterMove": "Should have maintained frames and denied the knee entry to prevent knee-on-belly.",
+          "whyBad": "Conceded knee-on-belly from side control."
+        }
+      },
+      "event_index": 11
+    },
+    {
+      "timestamp": 117.5,
+      "type": "POSITION",
+      "title": "DARK GI transitions to mount",
+      "description": "DARK GI transitions from knee-on-belly to mount on WHITE GI.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 4,
+          "analysis": "Executes a smooth transition from knee-on-belly to full mount, a highly dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 30,
+          "points": 0,
+          "analysis": "Fails to prevent the mount transition from knee-on-belly.",
+          "betterMove": "Should have used frames and leg movement to deny the mount from knee-on-belly.",
+          "whyBad": "Conceded mount from knee-on-belly."
+        }
+      },
+      "event_index": 12
+    },
+    {
+      "timestamp": 127.5,
+      "type": "SUBMISSION",
+      "title": "DARK GI attempts armbar from mount",
+      "description": "From mount, DARK GI attempts an armbar. WHITE GI defends the armbar by tucking his arm and eventually escapes the position.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": true,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "inaccuracy",
+          "score": 60,
+          "points": 0,
+          "analysis": "Attempts an armbar from mount but fails to secure it tightly enough for a finish.",
+          "betterMove": "Should have secured the arm and isolated it more effectively before committing to the armbar.",
+          "whyBad": "Lost dominant mount position due to a failed submission attempt."
+        },
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 0,
+          "analysis": "Successfully defends a dangerous armbar attempt from mount and escapes the position, demonstrating good defensive technique.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 13
+    },
+    {
+      "timestamp": 142.0,
+      "type": "RESET",
+      "title": "Both athletes reset",
+      "description": "Both athletes disengage, stand up, and reset, following WHITE GI's successful armbar defense and escape.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Resets for the next exchange.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Resets after a successful defense.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 14
+    },
+    {
+      "timestamp": 152.0,
+      "type": "TAKEDOWN",
+      "title": "DARK GI pulls closed guard",
+      "description": "From a standing position, DARK GI pulls WHITE GI into a closed guard.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Initiates ground fighting by pulling directly into a closed guard from standing.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Allows DARK GI to pull guard, preparing to pass.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 15
+    },
+    {
+      "timestamp": 157.5,
+      "type": "SWEEP",
+      "title": "DARK GI attempts sweep from closed guard",
+      "description": "From closed guard, DARK GI attempts a sweep on WHITE GI.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempts a sweep from closed guard, showing offensive intent.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Defends against DARK GI's sweep attempt from closed guard.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 16
+    },
+    {
+      "timestamp": 162.5,
+      "type": "SWEEP",
+      "title": "DARK GI sweeps WHITE GI to half guard",
+      "description": "DARK GI successfully sweeps WHITE GI, achieving top half guard.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully sweeps WHITE GI from closed guard, landing in a dominant top half guard position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 40,
+          "points": 0,
+          "analysis": "Fails to defend the sweep from closed guard, conceding top half guard.",
+          "betterMove": "Should have maintained a strong base and posture to prevent the sweep.",
+          "whyBad": "Conceded a sweep from closed guard."
+        }
+      },
+      "event_index": 17
+    },
+    {
+      "timestamp": 167.5,
+      "type": "POSITION",
+      "title": "DARK GI maintains top half guard",
+      "description": "DARK GI maintains top half guard as the clip ends.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 80,
+          "points": 0,
+          "analysis": "Maintains top half guard, demonstrating control and pressure.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Defends from bottom half guard, preventing further advancement.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 18
+    },
+    {
+      "timestamp": 161.5,
+      "type": "TAKEDOWN",
+      "title": "WHITE GI pulls closed guard",
+      "description": "WHITE GI, lying on his back, pulls DARK GI into a closed guard position from standing.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Initiates ground fighting by pulling directly into a closed guard from standing.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Allows WHITE GI to pull guard, preparing to pass.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 19
+    },
+    {
+      "timestamp": 164.0,
+      "type": "POSITION",
+      "title": "DARK GI disengages closed guard, WHITE GI establishes open guard",
+      "description": "DARK GI postures up to disengage from the closed guard. He then kneels to re-engage with WHITE GI, who is now maintaining an open guard.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Successfully postures up to disengage from closed guard.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Transitions from closed guard to open guard, maintaining active guard.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 20
+    },
+    {
+      "timestamp": 168.5,
+      "type": "POSITION",
+      "title": "DARK GI attempts guard pass",
+      "description": "DARK GI attempts to pass WHITE GI's open guard, controlling the legs and gi. WHITE GI actively maintains open guard, working grips to set up potential sweeps or submissions.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Actively works to pass open guard, showing control of legs and gi.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 85,
+          "points": 0,
+          "analysis": "Maintains active open guard and works grips, demonstrating good defensive and offensive potential.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 21
+    },
+    {
+      "timestamp": 174.0,
+      "type": "SUBMISSION",
+      "title": "WHITE GI submits DARK GI via armbar",
+      "description": "WHITE GI transitions from the open guard into an armbar attempt on DARK GI's right arm, successfully locking in the submission.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 100,
+          "points": 10,
+          "analysis": "Executes a swift and successful armbar from open guard, demonstrating opportunistic submission skills.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "blunder",
+          "score": 15,
+          "points": 0,
+          "analysis": "Allows an armbar to be secured from his opponent's open guard.",
+          "betterMove": "Should have recognized the armbar setup from open guard and defended his arm position more actively.",
+          "whyBad": "Failed to defend the armbar setup from open guard, leading to submission."
+        }
+      },
+      "event_index": 22
+    },
+    {
+      "timestamp": 183.0,
+      "type": "POSITION",
+      "title": "WHITE GI establishes dominant top control (KOB/Side Control)",
+      "description": "WHITE GI gains a dominant top position, establishing what appears to be a knee-on-belly or side control over DARK GI. He works to stabilize the position, while DARK GI defends and tries to escape.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Establishes a dominant top position after the submission, maintaining pressure and control.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 60,
+          "points": 0,
+          "analysis": "Defends from bottom, trying to escape the dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 23
+    },
+    {
+      "timestamp": 188.0,
+      "type": "SWEEP",
+      "title": "DARK GI attempts sweep, WHITE GI defends",
+      "description": "From his back, DARK GI attempts a sweep against WHITE GI's top control. WHITE GI defends the sweep effectively and maintains his dominant position, transitioning into a different guard passing attempt.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempts a sweep from bottom, showing offensive intent even from a defensive position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 0,
+          "analysis": "Successfully defends DARK GI's sweep attempt and maintains dominant position, transitioning to a guard passing attempt.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 24
+    },
+    {
+      "timestamp": 194.0,
+      "type": "POSITION",
+      "title": "WHITE GI attempts guard pass, DARK GI defends",
+      "description": "WHITE GI continues to work for a guard pass, controlling DARK GI's hips and legs. DARK GI maintains a strong defensive posture, attempting to recover his guard.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Persistently works for a guard pass, controlling hips and legs.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 85,
+          "points": 0,
+          "analysis": "Maintains strong defensive posture and actively attempts to recover guard.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 25
+    },
+    {
+      "timestamp": 200.0,
+      "type": "SWEEP",
+      "title": "DARK GI attempts inverted sweep, WHITE GI defends and disengages",
+      "description": "DARK GI attempts another sweep, inverting and using his legs to try and off-balance WHITE GI. WHITE GI successfully defends the sweep and then disengages from the roll, moving to a kneeling position.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempts an inverted sweep, showing creative offense from bottom.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 0,
+          "analysis": "Successfully defends DARK GI's inverted sweep attempt and disengages to a kneeling position, resetting the engagement.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 26
+    },
+    {
+      "timestamp": 211.5,
+      "type": "RESET",
+      "title": "Both athletes reset",
+      "description": "Both athletes exchange a fist bump, indicating a reset, following WHITE GI's successful defense.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Resets for the next exchange.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Resets after a successful defense.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 27
+    },
+    {
+      "timestamp": 213.5,
+      "type": "TAKEDOWN",
+      "title": "WHITE GI sits to establish guard, DARK GI engages",
+      "description": "From kneeling positions, WHITE GI (sitting) and DARK GI (kneeling) begin a new round, grasping hands, with WHITE GI sitting to establish guard.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Initiates ground engagement from kneeling by sitting to establish guard.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Engages with WHITE GI, preparing to pass guard.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 28
+    },
+    {
+      "timestamp": 218.0,
+      "type": "TAKEDOWN",
+      "title": "DARK GI pulls open guard",
+      "description": "DARK GI immediately initiates a guard pull, bringing WHITE GI into an open guard position. WHITE GI promptly begins working on a guard pass.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Initiates ground fighting by pulling directly into an open guard from kneeling.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Engages to pass DARK GI's open guard.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 29
+    },
+    {
+      "timestamp": 223.5,
+      "type": "POSITION",
+      "title": "WHITE GI attempts guard pass",
+      "description": "WHITE GI attempts to pass DARK GI's open guard, controlling his legs and posture. DARK GI maintains open guard, looking for opportunities for sweeps or submissions.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Actively works to pass open guard, controlling legs and posture.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 85,
+          "points": 0,
+          "analysis": "Maintains active open guard and looks for offensive opportunities.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 30
+    },
+    {
+      "timestamp": 227.5,
+      "type": "POSITION",
+      "title": "WHITE GI continues guard passing efforts",
+      "description": "WHITE GI continues his guard passing efforts, focusing on controlling DARK GI's lower body.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Persistently works on passing the guard, focusing on lower body control.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 80,
+          "points": 0,
+          "analysis": "Continues to defend open guard, preventing the pass.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 31
+    },
+    {
+      "timestamp": 230.5,
+      "type": "POSITION",
+      "title": "WHITE GI passes guard to side control",
+      "description": "WHITE GI successfully passes DARK GI's open guard and establishes side control, with DARK GI flat on his back.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 3,
+          "analysis": "Executes a successful guard pass and immediately establishes side control, gaining dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "mistake",
+          "score": 35,
+          "points": 0,
+          "analysis": "Fails to defend his open guard, conceding a guard pass and side control.",
+          "betterMove": "Should have maintained active hooks and frames to prevent the guard pass.",
+          "whyBad": "Conceded guard pass and side control."
+        }
+      },
+      "event_index": 32
+    },
+    {
+      "timestamp": 233.5,
+      "type": "POSITION",
+      "title": "WHITE GI disengages side control, both sit up",
+      "description": "WHITE GI releases side control and sits up. DARK GI rolls to his side and sits up. No full reset.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Releases side control and sits up, continuing the drilling.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Sits up after being in bottom side control, preparing for the next exchange.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 33
+    },
+    {
+      "timestamp": 244.5,
+      "type": "TAKEDOWN",
+      "title": "Both prepare to re-engage",
+      "description": "Both athletes grasp hands from seated positions, signaling the start of another exchange.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Prepares to re-engage.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Prepares to re-engage.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 34
+    },
+    {
+      "timestamp": 247.0,
+      "type": "TAKEDOWN",
+      "title": "DARK GI pulls open guard",
+      "description": "DARK GI immediately pulls guard again, establishing an open guard.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Immediately pulls guard to establish an open guard position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Engages to pass DARK GI's open guard.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 35
+    },
+    {
+      "timestamp": 250.0,
+      "type": "POSITION",
+      "title": "WHITE GI attempts guard pass",
+      "description": "WHITE GI begins to work on passing DARK GI's open guard once more.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Initiates guard passing efforts on DARK GI's open guard.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 80,
+          "points": 0,
+          "analysis": "Defends open guard, preparing for WHITE GI's pass attempts.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 36
+    },
+    {
+      "timestamp": 245.0,
+      "type": "TAKEDOWN",
+      "title": "DARK GI pulls open guard",
+      "description": "DARK GI initiates grips, then pulls WHITE GI into a sitting position, establishing open guard.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Initiates ground engagement by pulling open guard from kneeling.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Engages with DARK GI, preparing to pass guard.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 37
+    },
+    {
+      "timestamp": 256.0,
+      "type": "POSITION",
+      "title": "DARK GI maintains open guard, WHITE GI attempts pass",
+      "description": "From open guard, DARK GI maintains control using his legs and works to break WHITE GI's posture. WHITE GI attempts to establish a dominant passing position.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 85,
+          "points": 0,
+          "analysis": "Maintains strong open guard, actively controlling distance and posture to set up offense.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Attempts to pass DARK GI's open guard, seeking dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 38
+    },
+    {
+      "timestamp": 268.0,
+      "type": "SWEEP",
+      "title": "DARK GI sweeps WHITE GI",
+      "description": "DARK GI successfully executes a sweep, reversing the position and bringing WHITE GI onto his back.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Executes a successful sweep from open guard, reversing position and gaining top control.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 40,
+          "points": 0,
+          "analysis": "Fails to defend the sweep from open guard.",
+          "betterMove": "Should have maintained a stronger base and posture to prevent the sweep.",
+          "whyBad": "Conceded a sweep from open guard."
+        }
+      },
+      "event_index": 39
+    },
+    {
+      "timestamp": 277.5,
+      "type": "POSITION",
+      "title": "DARK GI establishes and maintains top control",
+      "description": "DARK GI establishes and maintains a dominant top position, moving towards side control while WHITE GI defends from the bottom.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 80,
+          "points": 0,
+          "analysis": "Establishes and maintains dominant top control, working towards side control.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Defends from bottom, attempting to prevent further advancement.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 40
+    },
+    {
+      "timestamp": 287.0,
+      "type": "SWEEP",
+      "title": "WHITE GI reverses DARK GI",
+      "description": "WHITE GI performs a reversal, successfully taking the top position and putting DARK GI on his back.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 2,
+          "analysis": "Executes a successful reversal from bottom, demonstrating effective escape and offensive transition.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "mistake",
+          "score": 35,
+          "points": 0,
+          "analysis": "Fails to maintain top control, getting reversed by WHITE GI.",
+          "betterMove": "Should have maintained better weight distribution and base to prevent the reversal.",
+          "whyBad": "Lost dominant top position due to a successful reversal."
+        }
+      },
+      "event_index": 41
+    },
+    {
+      "timestamp": 294.5,
+      "type": "POSITION",
+      "title": "WHITE GI maintains dominant top control",
+      "description": "WHITE GI maintains dominant top control, working from side control or knee-on-belly, while DARK GI defends from the bottom.",
+      "attacker": "WHITE GI",
+      "defender": "DARK GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "good",
+          "score": 80,
+          "points": 0,
+          "analysis": "Maintains dominant top control, showing good positional maintenance.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Defends from bottom, preventing further advancement or submissions.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 42
+    },
+    {
+      "timestamp": 300.0,
+      "type": "RESET",
+      "title": "Both athletes reset",
+      "description": "Both athletes stop, stand up, and exchange a fist bump, indicating a reset.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Resets for the next exchange.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Resets after maintaining dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 43
+    },
+    {
+      "timestamp": 304.0,
+      "type": "TAKEDOWN",
+      "title": "Both prepare to re-engage from kneeling",
+      "description": "Following the reset, both athletes return to their kneeling positions, exchange a fist bump, and prepare to re-engage.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Prepares to re-engage from kneeling.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Prepares to re-engage from kneeling.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 44
+    },
+    {
+      "timestamp": 307.0,
+      "type": "TAKEDOWN",
+      "title": "DARK GI pulls open guard",
+      "description": "DARK GI pulls WHITE GI into open guard once more, establishing control from the bottom.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Pulls open guard to establish control from the bottom, initiating offense.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Engages to pass DARK GI's open guard.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 45
+    },
+    {
+      "timestamp": 319.0,
+      "type": "POSITION",
+      "title": "Guard exchange: DARK GI maintains open guard, WHITE GI attempts pass",
+      "description": "DARK GI actively works from open guard, attempting sweeps and maintaining distance with his legs. WHITE GI attempts to pass the guard, but DARK GI defends and continuously initiates offense.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 85,
+          "points": 0,
+          "analysis": "Actively maintains open guard, demonstrating strong defense and continuous offense, attempting sweeps.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Attempts to pass DARK GI's active open guard, but faces strong resistance.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 46
+    },
+    {
+      "timestamp": 324.0,
+      "type": "POSITION",
+      "title": "DARK GI attempts guard pass, WHITE GI defends",
+      "description": "DARK GI is in a top position, attempting to pass WHITE GI's half-guard or open-guard. WHITE GI defends diligently, using legs to maintain distance and prevent pass.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Actively attempts to pass WHITE GI's guard, showing persistence in clearing legs and attempting to gain a dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 85,
+          "points": 0,
+          "analysis": "Diligently defends the half/open guard, effectively using legs to maintain distance and prevent the guard pass.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 47
+    },
+    {
+      "timestamp": 333.0,
+      "type": "POSITION",
+      "title": "Guard passing sequence continues",
+      "description": "DARK GI continues to press the guard pass, moving around WHITE GI's legs. WHITE GI uses his guard to prevent the pass. The sequence is ongoing as the clip ends.",
+      "attacker": "DARK GI",
+      "defender": "WHITE GI",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Maintains pressure and continues guard passing efforts as the clip concludes.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 85,
+          "points": 0,
+          "analysis": "Successfully defends guard against persistent passing attempts until the clip ends.",
+          "betterMove": null,
+          "whyBad": null
+        }
+      },
+      "event_index": 48
+    }
+  ],
+  "fighter_stats": {
+    "DARK GI": {
+      "submissions": 0,
+      "takedowns": 3,
+      "sweeps": 2,
+      "positions": 6,
+      "escapes": 0,
+      "blunders": 2,
+      "mistakes": 5,
+      "inaccuracies": 1,
+      "total_points": 11
+    },
+    "WHITE GI": {
+      "submissions": 2,
+      "takedowns": 3,
+      "sweeps": 2,
+      "positions": 6,
+      "escapes": 0,
+      "blunders": 1,
+      "mistakes": 7,
+      "inaccuracies": 0,
+      "total_points": 33
+    }
+  },
+  "match_summary": {
+    "final_scores": {
+      "DARK GI": 11,
+      "WHITE GI": 33
+    },
+    "point_differential": 22,
+    "dominant_fighter": "WHITE GI",
+    "key_moment": {
+      "event_index": 3,
+      "timestamp": 62.0,
+      "title": "WHITE GI submits DARK GI via head-and-arm choke",
+      "fighter": "WHITE GI",
+      "points": 14
+    }
+  },
+  "position_timeline": {
+    "duration_seconds": 338,
+    "fighter_timelines": {
+      "DARK GI": [
+        {
+          "position": "standing",
+          "start": 0.0,
+          "end": 9.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 9.0,
+          "end": 35.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 35.0,
+          "end": 54.0
+        },
+        {
+          "position": "bottom (KOB)",
+          "start": 54.0,
+          "end": 70.0
+        },
+        {
+          "position": "resetting",
+          "start": 70.0,
+          "end": 80.0
+        },
+        {
+          "position": "bottom (side control)",
+          "start": 80.0,
+          "end": 90.0
+        },
+        {
+          "position": "mounted",
+          "start": 90.0,
+          "end": 95.0
+        },
+        {
+          "position": "top (open guard passing)",
+          "start": 95.0,
+          "end": 100.0
+        },
+        {
+          "position": "top control",
+          "start": 100.0,
+          "end": 105.0
+        },
+        {
+          "position": "top control (side control)",
+          "start": 105.0,
+          "end": 110.0
+        },
+        {
+          "position": "top control (side control)",
+          "start": 110.0,
+          "end": 115.0
+        },
+        {
+          "position": "top control (KOB)",
+          "start": 115.0,
+          "end": 120.0
+        },
+        {
+          "position": "mount",
+          "start": 120.0,
+          "end": 135.0
+        },
+        {
+          "position": "bottom (escaped/resetting)",
+          "start": 135.0,
+          "end": 149.0
+        },
+        {
+          "position": "standing",
+          "start": 149.0,
+          "end": 155.0
+        },
+        {
+          "position": "closed guard",
+          "start": 155.0,
+          "end": 160.0
+        },
+        {
+          "position": "closed guard",
+          "start": 160.0,
+          "end": 165.0
+        },
+        {
+          "position": "top half guard",
+          "start": 165.0,
+          "end": 170.0
+        },
+        {
+          "position": "resetting",
+          "start": 170.0,
+          "end": 160.0
+        },
+        {
+          "position": "standing",
+          "start": 160.0,
+          "end": 163.0
+        },
+        {
+          "position": "top (closed guard passing)",
+          "start": 163.0,
+          "end": 165.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 165.0,
+          "end": 172.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 172.0,
+          "end": 176.0
+        },
+        {
+          "position": "submitted (armbar)",
+          "start": 176.0,
+          "end": 180.0
+        },
+        {
+          "position": "bottom (post-submission)",
+          "start": 180.0,
+          "end": 186.0
+        },
+        {
+          "position": "bottom (KOB/Side Control)",
+          "start": 186.0,
+          "end": 190.0
+        },
+        {
+          "position": "bottom (KOB/Side Control)",
+          "start": 190.0,
+          "end": 198.0
+        },
+        {
+          "position": "bottom (guard recovery)",
+          "start": 198.0,
+          "end": 202.0
+        },
+        {
+          "position": "kneeling",
+          "start": 202.0,
+          "end": 211.0
+        },
+        {
+          "position": "kneeling",
+          "start": 211.0,
+          "end": 212.0
+        },
+        {
+          "position": "kneeling",
+          "start": 212.0,
+          "end": 215.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 215.0,
+          "end": 221.0
+        },
+        {
+          "position": "open guard",
+          "start": 221.0,
+          "end": 226.0
+        },
+        {
+          "position": "open guard",
+          "start": 226.0,
+          "end": 229.0
+        },
+        {
+          "position": "open guard",
+          "start": 229.0,
+          "end": 232.0
+        },
+        {
+          "position": "bottom (side control)",
+          "start": 232.0,
+          "end": 235.0
+        },
+        {
+          "position": "sitting",
+          "start": 235.0,
+          "end": 244.0
+        },
+        {
+          "position": "sitting",
+          "start": 244.0,
+          "end": 245.0
+        },
+        {
+          "position": "sitting",
+          "start": 245.0,
+          "end": 249.0
+        },
+        {
+          "position": "open guard",
+          "start": 249.0,
+          "end": 251.0
+        },
+        {
+          "position": "resetting",
+          "start": 251.0,
+          "end": 240.0
+        },
+        {
+          "position": "kneeling",
+          "start": 240.0,
+          "end": 244.0
+        },
+        {
+          "position": "kneeling",
+          "start": 244.0,
+          "end": 246.0
+        },
+        {
+          "position": "open guard",
+          "start": 246.0,
+          "end": 266.0
+        },
+        {
+          "position": "open guard",
+          "start": 266.0,
+          "end": 270.0
+        },
+        {
+          "position": "top control",
+          "start": 270.0,
+          "end": 285.0
+        },
+        {
+          "position": "top control (side control)",
+          "start": 285.0,
+          "end": 289.0
+        },
+        {
+          "position": "bottom (reversed)",
+          "start": 289.0,
+          "end": 300.0
+        },
+        {
+          "position": "bottom (side control/KOB)",
+          "start": 300.0,
+          "end": 300.0
+        },
+        {
+          "position": "standing",
+          "start": 300.0,
+          "end": 303.0
+        },
+        {
+          "position": "kneeling",
+          "start": 303.0,
+          "end": 305.0
+        },
+        {
+          "position": "kneeling",
+          "start": 305.0,
+          "end": 309.0
+        },
+        {
+          "position": "open guard",
+          "start": 309.0,
+          "end": 329.0
+        },
+        {
+          "position": "resetting",
+          "start": 329.0,
+          "end": 320.0
+        },
+        {
+          "position": "top (half/open guard passing)",
+          "start": 320.0,
+          "end": 328.0
+        },
+        {
+          "position": "top (half/open guard passing)",
+          "start": 328.0,
+          "end": 338.0
+        }
+      ],
+      "WHITE GI": [
+        {
+          "position": "standing",
+          "start": 0.0,
+          "end": 9.0
+        },
+        {
+          "position": "open guard",
+          "start": 9.0,
+          "end": 35.0
+        },
+        {
+          "position": "open guard",
+          "start": 35.0,
+          "end": 54.0
+        },
+        {
+          "position": "top control (KOB)",
+          "start": 54.0,
+          "end": 70.0
+        },
+        {
+          "position": "resetting",
+          "start": 70.0,
+          "end": 80.0
+        },
+        {
+          "position": "top control (side control)",
+          "start": 80.0,
+          "end": 90.0
+        },
+        {
+          "position": "mount",
+          "start": 90.0,
+          "end": 95.0
+        },
+        {
+          "position": "open guard",
+          "start": 95.0,
+          "end": 100.0
+        },
+        {
+          "position": "bottom (passed guard)",
+          "start": 100.0,
+          "end": 105.0
+        },
+        {
+          "position": "bottom (side control)",
+          "start": 105.0,
+          "end": 110.0
+        },
+        {
+          "position": "bottom (side control)",
+          "start": 110.0,
+          "end": 115.0
+        },
+        {
+          "position": "bottom (KOB)",
+          "start": 115.0,
+          "end": 120.0
+        },
+        {
+          "position": "mounted",
+          "start": 120.0,
+          "end": 135.0
+        },
+        {
+          "position": "top (disengaged/resetting)",
+          "start": 135.0,
+          "end": 149.0
+        },
+        {
+          "position": "standing",
+          "start": 149.0,
+          "end": 155.0
+        },
+        {
+          "position": "top (closed guard passing)",
+          "start": 155.0,
+          "end": 160.0
+        },
+        {
+          "position": "top (closed guard passing)",
+          "start": 160.0,
+          "end": 165.0
+        },
+        {
+          "position": "bottom half guard",
+          "start": 165.0,
+          "end": 170.0
+        },
+        {
+          "position": "resetting",
+          "start": 170.0,
+          "end": 160.0
+        },
+        {
+          "position": "standing",
+          "start": 160.0,
+          "end": 163.0
+        },
+        {
+          "position": "closed guard",
+          "start": 163.0,
+          "end": 165.0
+        },
+        {
+          "position": "open guard",
+          "start": 165.0,
+          "end": 172.0
+        },
+        {
+          "position": "open guard",
+          "start": 172.0,
+          "end": 176.0
+        },
+        {
+          "position": "armbar (from open guard)",
+          "start": 176.0,
+          "end": 180.0
+        },
+        {
+          "position": "top (post-submission)",
+          "start": 180.0,
+          "end": 186.0
+        },
+        {
+          "position": "top control (KOB/Side Control)",
+          "start": 186.0,
+          "end": 190.0
+        },
+        {
+          "position": "top control (guard passing)",
+          "start": 190.0,
+          "end": 198.0
+        },
+        {
+          "position": "top control (guard passing)",
+          "start": 198.0,
+          "end": 202.0
+        },
+        {
+          "position": "kneeling",
+          "start": 202.0,
+          "end": 211.0
+        },
+        {
+          "position": "kneeling",
+          "start": 211.0,
+          "end": 212.0
+        },
+        {
+          "position": "kneeling",
+          "start": 212.0,
+          "end": 215.0
+        },
+        {
+          "position": "open guard",
+          "start": 215.0,
+          "end": 221.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 221.0,
+          "end": 226.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 226.0,
+          "end": 229.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 229.0,
+          "end": 232.0
+        },
+        {
+          "position": "top control (side control)",
+          "start": 232.0,
+          "end": 235.0
+        },
+        {
+          "position": "sitting",
+          "start": 235.0,
+          "end": 244.0
+        },
+        {
+          "position": "sitting",
+          "start": 244.0,
+          "end": 245.0
+        },
+        {
+          "position": "sitting",
+          "start": 245.0,
+          "end": 249.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 249.0,
+          "end": 251.0
+        },
+        {
+          "position": "resetting",
+          "start": 251.0,
+          "end": 240.0
+        },
+        {
+          "position": "kneeling",
+          "start": 240.0,
+          "end": 244.0
+        },
+        {
+          "position": "kneeling",
+          "start": 244.0,
+          "end": 246.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 246.0,
+          "end": 266.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 266.0,
+          "end": 270.0
+        },
+        {
+          "position": "bottom (swept)",
+          "start": 270.0,
+          "end": 285.0
+        },
+        {
+          "position": "bottom (side control)",
+          "start": 285.0,
+          "end": 289.0
+        },
+        {
+          "position": "top control",
+          "start": 289.0,
+          "end": 300.0
+        },
+        {
+          "position": "top control (side control/KOB)",
+          "start": 300.0,
+          "end": 300.0
+        },
+        {
+          "position": "standing",
+          "start": 300.0,
+          "end": 303.0
+        },
+        {
+          "position": "kneeling",
+          "start": 303.0,
+          "end": 305.0
+        },
+        {
+          "position": "kneeling",
+          "start": 305.0,
+          "end": 309.0
+        },
+        {
+          "position": "passing open guard",
+          "start": 309.0,
+          "end": 329.0
+        },
+        {
+          "position": "resetting",
+          "start": 329.0,
+          "end": 320.0
+        },
+        {
+          "position": "half/open guard",
+          "start": 320.0,
+          "end": 328.0
+        },
+        {
+          "position": "half/open guard",
+          "start": 328.0,
+          "end": 338.0
+        }
+      ]
+    },
+    "submissions": [
+      {
+        "fighter": "WHITE GI",
+        "type": "head-and-arm choke",
+        "timestamp": 62.0,
+        "from_position": "top control (KOB)",
+        "completed": true
+      },
+      {
+        "fighter": "WHITE GI",
+        "type": "armbar",
+        "timestamp": 174.0,
+        "from_position": "open guard",
+        "completed": true
+      }
+    ]
+  },
+  "key_moments": [
+    {
+      "event_index": 3,
+      "timestamp": 62.0,
+      "title": "WHITE GI submits DARK GI via head-and-arm choke",
+      "fighter": "WHITE GI",
+      "importance": 10,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 100,
+          "points": 14,
+          "analysis": "Achieves full mount and rapidly transitions to a dominant submission, demonstrating high-level finishing ability.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "blunder",
+          "score": 10,
+          "points": 0,
+          "analysis": "Allowed mount to be established, then failed to defend the head-and-arm choke effectively.",
+          "betterMove": "Should have focused on mount escape immediately upon concession, and applied defensive frames/posture to prevent the choke setup.",
+          "whyBad": "Failure to prevent mount, then poor defense leading directly to submission."
+        }
+      }
+    },
+    {
+      "event_index": 22,
+      "timestamp": 174.0,
+      "title": "WHITE GI submits DARK GI via armbar",
+      "fighter": "WHITE GI",
+      "importance": 10,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 100,
+          "points": 10,
+          "analysis": "Executes a swift and successful armbar from open guard, demonstrating opportunistic submission skills.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "blunder",
+          "score": 15,
+          "points": 0,
+          "analysis": "Allows an armbar to be secured from his opponent's open guard.",
+          "betterMove": "Should have recognized the armbar setup from open guard and defended his arm position more actively.",
+          "whyBad": "Failed to defend the armbar setup from open guard, leading to submission."
+        }
+      }
+    },
+    {
+      "event_index": 2,
+      "timestamp": 44.5,
+      "title": "WHITE GI sweeps DARK GI to Knee-on-Belly",
+      "fighter": "WHITE GI",
+      "importance": 9,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 4,
+          "analysis": "Executes a clean sweep from open guard and immediately capitalizes by advancing to knee-on-belly.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "mistake",
+          "score": 40,
+          "points": 0,
+          "analysis": "Lost balance during guard pass attempt and was swept, then failed to prevent position advancement to knee-on-belly.",
+          "betterMove": "Should have maintained better posture and base during the guard pass, and framed/escaped side control more effectively.",
+          "whyBad": "Failed to recognize and counter the sweep attempt, then conceded dominant positions without significant defense."
+        }
+      }
+    },
+    {
+      "event_index": 6,
+      "timestamp": 87.5,
+      "title": "WHITE GI transitions to mount",
+      "fighter": "WHITE GI",
+      "importance": 9,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 4,
+          "analysis": "Successfully transitions from side control to full mount, a highly dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "mistake",
+          "score": 35,
+          "points": 0,
+          "analysis": "Fails to prevent the mount transition from side control.",
+          "betterMove": "Should have framed and created space to escape side control before the mount was established.",
+          "whyBad": "Conceded mount from side control."
+        }
+      }
+    },
+    {
+      "event_index": 12,
+      "timestamp": 117.5,
+      "title": "DARK GI transitions to mount",
+      "fighter": "DARK GI",
+      "importance": 9,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 4,
+          "analysis": "Executes a smooth transition from knee-on-belly to full mount, a highly dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 30,
+          "points": 0,
+          "analysis": "Fails to prevent the mount transition from knee-on-belly.",
+          "betterMove": "Should have used frames and leg movement to deny the mount from knee-on-belly.",
+          "whyBad": "Conceded mount from knee-on-belly."
+        }
+      }
+    },
+    {
+      "event_index": 32,
+      "timestamp": 230.5,
+      "title": "WHITE GI passes guard to side control",
+      "fighter": "WHITE GI",
+      "importance": 9,
+      "perspectives": {
+        "WHITE GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 3,
+          "analysis": "Executes a successful guard pass and immediately establishes side control, gaining dominant position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "DARK GI": {
+          "quality": "mistake",
+          "score": 35,
+          "points": 0,
+          "analysis": "Fails to defend his open guard, conceding a guard pass and side control.",
+          "betterMove": "Should have maintained active hooks and frames to prevent the guard pass.",
+          "whyBad": "Conceded guard pass and side control."
+        }
+      }
+    },
+    {
+      "event_index": 7,
+      "timestamp": 92.5,
+      "title": "DARK GI sweeps WHITE GI from mount",
+      "fighter": "DARK GI",
+      "importance": 8,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 95,
+          "points": 2,
+          "analysis": "Demonstrates strong defensive and offensive skills by sweeping from the highly vulnerable mount bottom.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 40,
+          "points": 0,
+          "analysis": "Fails to maintain mount, getting swept by DARK GI.",
+          "betterMove": "Should have maintained a tighter base and posture in mount to prevent the sweep.",
+          "whyBad": "Lost mount due to a successful sweep."
+        }
+      }
+    },
+    {
+      "event_index": 8,
+      "timestamp": 97.5,
+      "title": "DARK GI passes WHITE GI's open guard",
+      "fighter": "DARK GI",
+      "importance": 8,
+      "perspectives": {
+        "DARK GI": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 3,
+          "analysis": "Successfully passes WHITE GI's open guard, securing a dominant top position.",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "WHITE GI": {
+          "quality": "mistake",
+          "score": 45,
+          "points": 0,
+          "analysis": "Fails to defend his open guard against DARK GI's pass.",
+          "betterMove": "Should have maintained active hooks and frames to prevent the guard pass.",
+          "whyBad": "Conceded guard pass."
+        }
+      }
+    }
+  ]
+}
+```

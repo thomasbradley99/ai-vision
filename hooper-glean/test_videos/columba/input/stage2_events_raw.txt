@@ -1,0 +1,672 @@
+[
+  {
+    "timestamp": 0,
+    "type": "EVENT",
+    "title": "Match Start",
+    "description": "Both athletes exchange a fist bump and assume a standing grappling stance.",
+    "attacker": null,
+    "defender": null,
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 1,
+    "type": "POSITION",
+    "title": "Underhook Attempt",
+    "description": "BLACK RASHGUARD attempts to gain an underhook in a standing clinch, but GREEN RASHGUARD defends the grip and maintains posture.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 5,
+    "type": "EVENT",
+    "title": "Drill Restart",
+    "description": "Athletes reset, exchange a fist bump, and restart from a standing grappling stance.",
+    "attacker": null,
+    "defender": null,
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 8,
+    "type": "TAKEDOWN",
+    "title": "Single Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a single leg takedown; GREEN RASHGUARD defends by pulling his leg free and maintaining balance.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 13,
+    "type": "TAKEDOWN",
+    "title": "Double Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a double leg takedown; GREEN RASHGUARD defends by sprawling and staying on his feet.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 16,
+    "type": "TAKEDOWN",
+    "title": "Snapdown Attempt",
+    "description": "GREEN RASHGUARD attempts a snapdown; BLACK RASHGUARD defends the head control.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 21,
+    "type": "POSITION",
+    "title": "Head Control Attempt",
+    "description": "BLACK RASHGUARD attempts to establish dominant head control in a standing clinch, but GREEN RASHGUARD defends.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 29,
+    "type": "TAKEDOWN",
+    "title": "Body Lock Lift Attempt",
+    "description": "BLACK RASHGUARD secures a body lock and attempts a lift takedown; GREEN RASHGUARD defends by staying connected and preventing elevation.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 34,
+    "type": "EVENT",
+    "title": "Drill Restart",
+    "description": "Athletes reset, exchange a fist bump, and restart from a standing grappling stance.",
+    "attacker": null,
+    "defender": null,
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 45,
+    "type": "TAKEDOWN",
+    "title": "Snapdown & Single Leg Attempt",
+    "description": "BLACK RASHGUARD attempts a snapdown then single leg takedown; GREEN RASHGUARD drops to one knee.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 48,
+    "type": "POSITION",
+    "title": "Guard Pull to Open Guard",
+    "description": "GREEN RASHGUARD pulls open guard from standing after defending BLACK RASHGUARD's takedown attempts.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 50,
+    "type": "POSITION",
+    "title": "Open Guard Pass Attempt",
+    "description": "BLACK RASHGUARD attempts to pass GREEN RASHGUARD's open guard. GREEN RASHGUARD attempts to stand but is controlled, returning to seated open guard.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 58,
+    "type": "POSITION",
+    "title": "Guard Transition (Open to Half to Open)",
+    "description": "GREEN RASHGUARD transitions from open guard to half guard, then back to open guard, using legs for defense. BLACK RASHGUARD works to clear legs and pass.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 65,
+    "type": "SWEEP",
+    "title": "Open Guard Sweep Attempt",
+    "description": "GREEN RASHGUARD attempts a sweep from open guard by controlling arm and leg; BLACK RASHGUARD defends and maintains balance.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 73,
+    "type": "SWEEP",
+    "title": "Open Guard Sweep Attempt",
+    "description": "GREEN RASHGUARD attempts another sweep from open guard; BLACK RASHGUARD defends, drops to knees, gains leg control, moving towards half guard.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 76,
+    "type": "POSITION",
+    "title": "Guard Pass to Half Guard (Attempt)",
+    "description": "After defending a sweep, BLACK RASHGUARD moves towards establishing a half guard passing position.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 77,
+    "type": "SWEEP",
+    "title": "Butterfly Sweep Attempt",
+    "description": "From half guard, GREEN RASHGUARD attempts a butterfly sweep; BLACK RASHGUARD resists and maintains base.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 81,
+    "type": "SWEEP",
+    "title": "Butterfly Sweep",
+    "description": "GREEN RASHGUARD successfully executes a butterfly sweep, tipping BLACK RASHGUARD onto his back.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 83,
+    "type": "POSITION",
+    "title": "Recovery to Seated Guard",
+    "description": "After being swept, BLACK RASHGUARD quickly recovers to a seated guard position.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 85,
+    "type": "POSITION",
+    "title": "Guard Pass Attempt",
+    "description": "BLACK RASHGUARD works to pass GREEN RASHGUARD's guard; GREEN RASHGUARD defends with leg frames to maintain space.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 80,
+    "type": "EVENT",
+    "title": "Standing Engagement",
+    "description": "Both athletes start from a standing position, gripping each other.",
+    "attacker": null,
+    "defender": null,
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 82,
+    "type": "TAKEDOWN",
+    "title": "Double Leg Takedown leading to Open Guard",
+    "description": "BLACK RASHGUARD attempts a double-leg takedown on GREEN RASHGUARD, who falls to their back, leading to BLACK RASHGUARD establishing top open guard.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 86,
+    "type": "POSITION",
+    "title": "Open Guard Pass Attempt",
+    "description": "BLACK RASHGUARD attempts to pass GREEN RASHGUARD's open guard; GREEN RASHGUARD defends with legs.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 94,
+    "type": "POSITION",
+    "title": "Open Guard Pass Attempt (Continued)",
+    "description": "BLACK RASHGUARD continues to work on passing GREEN RASHGUARD's open guard; GREEN RASHGUARD defends with legs, attempting to sweep or maintain distance.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 107,
+    "type": "POSITION",
+    "title": "Transition to Sitting Guard",
+    "description": "BLACK RASHGUARD disengages and stands; GREEN RASHGUARD transitions from back to a sitting guard position.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 111,
+    "type": "SWEEP",
+    "title": "Sitting Guard Sweep Attempt",
+    "description": "GREEN RASHGUARD attempts to sweep BLACK RASHGUARD from sitting guard; BLACK RASHGUARD defends and returns to a standing-over position to pass.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 115,
+    "type": "POSITION",
+    "title": "Open Guard Pass Attempt",
+    "description": "BLACK RASHGUARD actively attempts to pass GREEN RASHGUARD's open guard from standing and kneeling; GREEN RASHGUARD defends and re-establishes guard.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 125,
+    "type": "POSITION",
+    "title": "Stack Pass Attempt",
+    "description": "BLACK RASHGUARD attempts a stack pass, lifting GREEN RASHGUARD slightly; GREEN RASHGUARD defends and maintains open guard.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 131,
+    "type": "ESCAPE",
+    "title": "Disengage from Guard",
+    "description": "BLACK RASHGUARD stands up and disengages from GREEN RASHGUARD's guard. GREEN RASHGUARD remains on their back.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 138,
+    "type": "EVENT",
+    "title": "Brief Pause and Re-engagement",
+    "description": "GREEN RASHGUARD sits up while BLACK RASHGUARD stands. They briefly pause and re-engage.",
+    "attacker": null,
+    "defender": null,
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 142,
+    "type": "POSITION",
+    "title": "Guard Pull to Open Guard",
+    "description": "GREEN RASHGUARD initiates a guard pull from kneeling, establishing open guard. BLACK RASHGUARD establishes top position.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 146,
+    "type": "POSITION",
+    "title": "Open Guard Pass Attempt",
+    "description": "BLACK RASHGUARD attempts to pass GREEN RASHGUARD's open guard; GREEN RASHGUARD defends and maintains guard.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 150,
+    "type": "POSITION",
+    "title": "Guard Pull to Open Guard",
+    "description": "GREEN RASHGUARD sits up briefly then pulls open guard again. BLACK RASHGUARD immediately works to pass.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 154,
+    "type": "POSITION",
+    "title": "Open Guard Pass Attempt (Various)",
+    "description": "BLACK RASHGUARD attempts various guard passes against GREEN RASHGUARD's open guard.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 158,
+    "type": "SWEEP",
+    "title": "Sweep Attempt from Open Guard",
+    "description": "GREEN RASHGUARD attempts a sweep from open guard; BLACK RASHGUARD defends, maintaining balance and top position.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 162,
+    "type": "ESCAPE",
+    "title": "Disengage from Guard",
+    "description": "BLACK RASHGUARD disengages and stands up from guard. GREEN RASHGUARD sits up.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 165,
+    "type": "TAKEDOWN",
+    "title": "Standing Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a standing takedown; GREEN RASHGUARD defends.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 168,
+    "type": "TAKEDOWN",
+    "title": "Single Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD secures a single-leg grip and attempts a takedown; GREEN RASHGUARD defends and maintains balance.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 160,
+    "type": "EVENT",
+    "title": "Engagement from Standing",
+    "description": "GREEN RASHGUARD stands up from a seated position to engage BLACK RASHGUARD, who is standing.",
+    "attacker": null,
+    "defender": null,
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 164,
+    "type": "TAKEDOWN",
+    "title": "Double Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a double leg takedown; GREEN RASHGUARD defends by sprawling and maintaining base.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 165,
+    "type": "TAKEDOWN",
+    "title": "Snapdown/Ankle Pick Attempt",
+    "description": "GREEN RASHGUARD attempts a snap down or ankle pick; BLACK RASHGUARD defends by maintaining balance.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 167,
+    "type": "TAKEDOWN",
+    "title": "Single Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a single leg takedown; GREEN RASHGUARD defends and pulls his leg free.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 170,
+    "type": "TAKEDOWN",
+    "title": "Single Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts another single leg takedown; GREEN RASHGUARD defends by sprawling and circling away.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 172,
+    "type": "TAKEDOWN",
+    "title": "Low Single Leg Takedown Attempt",
+    "description": "GREEN RASHGUARD attempts a low single leg takedown; BLACK RASHGUARD defends.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 175,
+    "type": "TAKEDOWN",
+    "title": "Ankle Pick Attempt",
+    "description": "BLACK RASHGUARD attempts an ankle pick; GREEN RASHGUARD defends.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 178,
+    "type": "TAKEDOWN",
+    "title": "Single Leg Takedown Attempt",
+    "description": "GREEN RASHGUARD attempts a single leg takedown; BLACK RASHGUARD defends by sprawling.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 189,
+    "type": "TAKEDOWN",
+    "title": "Trip Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a trip from the clinch; GREEN RASHGUARD defends by maintaining balance and base.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 196,
+    "type": "TAKEDOWN",
+    "title": "Throw Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a throw from the clinch; GREEN RASHGUARD defends by shifting weight and maintaining footing.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 200,
+    "type": "TAKEDOWN",
+    "title": "Single Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a single leg takedown; GREEN RASHGUARD defends successfully by pulling his leg back and maintaining balance.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 205,
+    "type": "ESCAPE",
+    "title": "Takedown Defense and Reset",
+    "description": "GREEN RASHGUARD successfully defends a takedown attempt by BLACK RASHGUARD, leading to a reset.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 211,
+    "type": "TAKEDOWN",
+    "title": "Trip Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a trip from the clinch; GREEN RASHGUARD defends by staying upright.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 216,
+    "type": "TAKEDOWN",
+    "title": "Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a takedown; GREEN RASHGUARD defends.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 220,
+    "type": "TAKEDOWN",
+    "title": "Low Single Leg Takedown Attempt",
+    "description": "GREEN RASHGUARD attempts a low single leg takedown; BLACK RASHGUARD defends by sprawling and maintaining balance.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 225,
+    "type": "TAKEDOWN",
+    "title": "Ankle Pick Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts an ankle pick takedown; GREEN RASHGUARD defends.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 227,
+    "type": "TAKEDOWN",
+    "title": "Single Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a single leg takedown; GREEN RASHGUARD defends and pulls his leg free.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 230,
+    "type": "TAKEDOWN",
+    "title": "Low Single Leg Takedown Attempt",
+    "description": "GREEN RASHGUARD attempts a low single leg takedown; BLACK RASHGUARD defends.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 235,
+    "type": "TAKEDOWN",
+    "title": "Low Single Leg Takedown Attempt",
+    "description": "GREEN RASHGUARD attempts a low single leg takedown; BLACK RASHGUARD defends.",
+    "attacker": "GREEN RASHGUARD",
+    "defender": "BLACK RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 238,
+    "type": "TAKEDOWN",
+    "title": "Trip Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a trip; GREEN RASHGUARD defends.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 246,
+    "type": "TAKEDOWN",
+    "title": "Throw Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a throw from the clinch; GREEN RASHGUARD defends by maintaining balance.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 240,
+    "type": "EVENT",
+    "title": "Standing Grip Fighting",
+    "description": "BLACK RASHGUARD and GREEN RASHGUARD engage in grip-fighting exchanges, with no clear takedown attempts or position changes.",
+    "attacker": null,
+    "defender": null,
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 264,
+    "type": "TAKEDOWN",
+    "title": "Snapdown, Arm Drag, Single Leg Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts a snapdown, arm drag, then single leg takedown; GREEN RASHGUARD is briefly taken to one knee but stands back up, defending. No reset.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 267,
+    "type": "TAKEDOWN",
+    "title": "Snapdown Takedown Attempt",
+    "description": "BLACK RASHGUARD attempts another snapdown, driving GREEN RASHGUARD to the mat; GREEN RASHGUARD regains balance and stands up. No reset.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 272,
+    "type": "TAKEDOWN",
+    "title": "Double Leg Takedown",
+    "description": "BLACK RASHGUARD executes a double leg takedown, taking GREEN RASHGUARD to the mat. This leads to a reset.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 282,
+    "type": "TAKEDOWN",
+    "title": "Snapdown to Low Single Leg Takedown",
+    "description": "BLACK RASHGUARD performs a quick snapdown and transitions into a low single leg takedown, bringing GREEN RASHGUARD to the mat. This leads to a reset.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 290,
+    "type": "TAKEDOWN",
+    "title": "Double Leg Takedown",
+    "description": "BLACK RASHGUARD initiates a double leg takedown, driving GREEN RASHGUARD to the mat. This leads to a reset.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": false
+  },
+  {
+    "timestamp": 299,
+    "type": "TAKEDOWN",
+    "title": "Snapdown Attempt",
+    "description": "BLACK RASHGUARD attempts a snapdown; GREEN RASHGUARD defends effectively, maintaining posture and balance. No reset.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": true
+  },
+  {
+    "timestamp": 303,
+    "type": "TAKEDOWN",
+    "title": "Double Leg Takedown",
+    "description": "BLACK RASHGUARD attempts a double leg takedown, successfully bringing GREEN RASHGUARD to the mat. This leads to a reset.",
+    "attacker": "BLACK RASHGUARD",
+    "defender": "GREEN RASHGUARD",
+    "submission": false,
+    "attempt": false
+  }
+]

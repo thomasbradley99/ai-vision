@@ -1,0 +1,24 @@
+--index-url https://download.pytorch.org/whl/cu118
+torch
+torchvision
+torchaudio
+--extra-index-url https://pypi.org/simple/
+av
+ffmpeg-python
+firebase-admin
+opencv-python-headless
+opencv-contrib-python
+numpy
+pandas
+pyyaml
+tqdm
+transformers
+jsonlines
+supervision
+shapely
+scipy
+scikit-learn
+pillow
+replicate
+python-dotenv
+ultralytics

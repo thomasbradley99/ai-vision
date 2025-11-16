@@ -1,0 +1,3 @@
+[submodule "Football-Object-Detection"]
+	path = Football-Object-Detection
+	url = https://github.com/Mostafa-Nafie/Football-Object-Detection.git

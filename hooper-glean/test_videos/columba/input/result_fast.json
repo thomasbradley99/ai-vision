@@ -1,0 +1,2814 @@
+{
+  "events": [
+    {
+      "timestamp": 0,
+      "type": "TAKEDOWN",
+      "title": "GREEN/WHITE STRIPE attempts takedown",
+      "description": "GREEN/WHITE STRIPE attempts a takedown on BLACK RASHGUARD.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended GREEN/WHITE STRIPE attempts takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted GREEN/WHITE STRIPE attempts takedown but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 0,
+      "type": "POSITION",
+      "title": "BLACK RASHGUARD pulls to closed guard",
+      "description": "BLACK RASHGUARD counters and pulls GREEN/WHITE STRIPE into their closed guard as they fall to the mat.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed BLACK RASHGUARD pulls to closed guard",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to BLACK RASHGUARD pulls to closed guard",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        }
+      }
+    },
+    {
+      "timestamp": 2,
+      "type": "SWEEP",
+      "title": "BLACK RASHGUARD works to sweep",
+      "description": "BLACK RASHGUARD is in closed guard, actively working to sweep GREEN/WHITE STRIPE.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted BLACK RASHGUARD works to sweep but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended BLACK RASHGUARD works to sweep",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 2,
+      "type": "POSITION",
+      "title": "Head and arm control",
+      "description": "BLACK RASHGUARD securing a head and arm control in a standing clinch.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Head and arm control",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Head and arm control",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        }
+      }
+    },
+    {
+      "timestamp": 13,
+      "type": "TAKEDOWN",
+      "title": "Drop takedown",
+      "description": "BLACK RASHGUARD executes a drop takedown on GREEN/WHITE STRIPE, bringing him to the mat and landing in a side control position.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 2,
+          "analysis": "Executed Drop takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Drop takedown",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        }
+      }
+    },
+    {
+      "timestamp": 28,
+      "type": "SWEEP",
+      "title": "BLACK RASHGUARD successfully sweeps",
+      "description": "BLACK RASHGUARD successfully performs a sweep, reversing the position.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 2,
+          "analysis": "Executed BLACK RASHGUARD successfully sweeps",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to BLACK RASHGUARD successfully sweeps",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        }
+      }
+    },
+    {
+      "timestamp": 28,
+      "type": "POSITION",
+      "title": "BLACK RASHGUARD establishes side control",
+      "description": "BLACK RASHGUARD lands on top of GREEN/WHITE STRIPE in side control after a sweep.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed BLACK RASHGUARD establishes side control",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to BLACK RASHGUARD establishes side control",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        }
+      }
+    },
+    {
+      "timestamp": 30,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE enters closed guard",
+      "description": "GREEN/WHITE STRIPE kneels and enters BLACK RASHGUARD's closed guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE enters closed guard",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE enters closed guard",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 34,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE attempts guard pass",
+      "description": "GREEN/WHITE STRIPE works to posture up and break BLACK RASHGUARD's closed guard, then initiates a guard pass.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended GREEN/WHITE STRIPE attempts guard pass",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted GREEN/WHITE STRIPE attempts guard pass but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 45,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE successfully passes guard",
+      "description": "GREEN/WHITE STRIPE successfully passes BLACK RASHGUARD's guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE successfully passes guard",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE successfully passes guard",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 45,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE establishes side control",
+      "description": "GREEN/WHITE STRIPE establishes side control after passing guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE establishes side control",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE establishes side control",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 46,
+      "type": "TAKEDOWN",
+      "title": "Snapdown",
+      "description": "BLACK RASHGUARD secures a head and arm control and executes a snapdown, taking GREEN/WHITE STRIPE to a seated open guard position.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 2,
+          "analysis": "Executed Snapdown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Snapdown",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        }
+      }
+    },
+    {
+      "timestamp": 49,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE transitions to mount",
+      "description": "GREEN/WHITE STRIPE transitions from side control to mount.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE transitions to mount",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE transitions to mount",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 49,
+      "type": "SWEEP",
+      "title": "BLACK RASHGUARD sweeps from mount",
+      "description": "BLACK RASHGUARD immediately performs a sweep from mount.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 75,
+          "points": 2,
+          "analysis": "Executed BLACK RASHGUARD sweeps from mount",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to BLACK RASHGUARD sweeps from mount",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        }
+      }
+    },
+    {
+      "timestamp": 49,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD briefly attempts to pass GREEN/WHITE STRIPE's guard.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 52,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE enters closed guard",
+      "description": "GREEN/WHITE STRIPE kneels and enters BLACK RASHGUARD's closed guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE enters closed guard",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE enters closed guard",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 54,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 54,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD engages, attempting a guard pass by stepping over GREEN/WHITE STRIPE's leg.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 55,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE attempts and completes guard pass",
+      "description": "GREEN/WHITE STRIPE works to posture up and break BLACK RASHGUARD's closed guard, then successfully passes the guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE attempts and completes guard pass",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE attempts and completes guard pass",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 57,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 57,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 61,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 61,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 64,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 64,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 65,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE establishes side control",
+      "description": "GREEN/WHITE STRIPE establishes side control.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE establishes side control",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE establishes side control",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 65,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE transitions to mount",
+      "description": "GREEN/WHITE STRIPE transitions from side control to mount.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE transitions to mount",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE transitions to mount",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 67,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 67,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 69,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE successfully achieves mount",
+      "description": "GREEN/WHITE STRIPE successfully achieves mount.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE successfully achieves mount",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE successfully achieves mount",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 71,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE enters closed guard",
+      "description": "GREEN/WHITE STRIPE kneels and enters BLACK RASHGUARD's closed guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE enters closed guard",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE enters closed guard",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 71,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 71,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 74,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE attempts and completes guard pass to side control",
+      "description": "GREEN/WHITE STRIPE works to open and pass BLACK RASHGUARD's closed guard, successfully moving to side control.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE attempts and completes guard pass to side control",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE attempts and completes guard pass to side control",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 74,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 74,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 78,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE transitions to mount",
+      "description": "GREEN/WHITE STRIPE transitions from side control to mount.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE transitions to mount",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE transitions to mount",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 78,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 78,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 80,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE successfully achieves mount",
+      "description": "GREEN/WHITE STRIPE successfully achieves mount.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE successfully achieves mount",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE successfully achieves mount",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 81,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 81,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 82,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE enters closed guard",
+      "description": "GREEN/WHITE STRIPE kneels and enters BLACK RASHGUARD's closed guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE enters closed guard",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE enters closed guard",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 84,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE attempts and completes guard pass to side control",
+      "description": "GREEN/WHITE STRIPE works to open and pass BLACK RASHGUARD's closed guard, successfully establishing side control.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE attempts and completes guard pass to side control",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE attempts and completes guard pass to side control",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 84,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 84,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 88,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE transitions to mount",
+      "description": "GREEN/WHITE STRIPE transitions from side control to mount.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE transitions to mount",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE transitions to mount",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 88,
+      "type": "POSITION",
+      "title": "Guard pull",
+      "description": "GREEN/WHITE STRIPE immediately sits to open guard.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to Guard pull",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed Guard pull",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 88,
+      "type": "POSITION",
+      "title": "Guard pass attempt",
+      "description": "BLACK RASHGUARD attempts a guard pass.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Guard pass attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Guard pass attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 92,
+      "type": "POSITION",
+      "title": "GREEN/WHITE STRIPE successfully achieves mount",
+      "description": "GREEN/WHITE STRIPE successfully achieves mount.",
+      "attacker": "GREEN/WHITE STRIPE",
+      "defender": "BLACK RASHGUARD",
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "inaccuracy",
+          "score": 65,
+          "points": 0,
+          "analysis": "Lost position to GREEN/WHITE STRIPE successfully achieves mount",
+          "betterMove": "Maintain better base and posture",
+          "whyBad": "Position was compromised"
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 3,
+          "analysis": "Executed GREEN/WHITE STRIPE successfully achieves mount",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 160,
+      "type": "POSITION",
+      "title": "Stand up",
+      "description": "Both athletes stand up from a kneeling/seated position.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Stand up",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Stand up",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 161,
+      "type": "POSITION",
+      "title": "Hand fighting",
+      "description": "BLACK RASHGUARD and GREEN/WHITE STRIPE face each other and engage in hand fighting.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Hand fighting",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Hand fighting",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 164,
+      "type": "TAKEDOWN",
+      "title": "Double leg takedown",
+      "description": "BLACK RASHGUARD attempts and successfully executes a double leg takedown on GREEN/WHITE STRIPE, landing in a top position.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully completed Double leg takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "blunder",
+          "score": 20,
+          "points": 0,
+          "analysis": "Submitted by Double leg takedown",
+          "betterMove": "Improve defense and escape earlier",
+          "whyBad": "Failed to defend submission"
+        }
+      }
+    },
+    {
+      "timestamp": 168,
+      "type": "POSITION",
+      "title": "Reset",
+      "description": "Both RESET (stand up, fist bump, separate).",
+      "attacker": null,
+      "defender": null,
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 170,
+      "type": "POSITION",
+      "title": "Hand fighting",
+      "description": "Both athletes engage in hand fighting from a standing position.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Hand fighting",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Hand fighting",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 173,
+      "type": "TAKEDOWN",
+      "title": "Double leg takedown attempt",
+      "description": "BLACK RASHGUARD attempts a double leg takedown, but GREEN/WHITE STRIPE defends by sprawling. No takedown is achieved.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Double leg takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Double leg takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 175,
+      "type": "POSITION",
+      "title": "Reset and Re-engage",
+      "description": "Both reset to standing and re-engage in hand fighting.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset and Re-engage",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset and Re-engage",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 179,
+      "type": "TAKEDOWN",
+      "title": "Double leg takedown attempt",
+      "description": "BLACK RASHGUARD attempts another double leg takedown, which GREEN/WHITE STRIPE defends by sprawling and maintaining balance. No takedown is achieved.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Double leg takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Double leg takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 182,
+      "type": "POSITION",
+      "title": "Standing clinch",
+      "description": "Both enter a standing clinch, hand fighting for control.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Standing clinch",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Standing clinch",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 187,
+      "type": "POSITION",
+      "title": "Clinch maneuvering",
+      "description": "They continue to maneuver in the clinch, attempting to gain an advantage.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Clinch maneuvering",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Clinch maneuvering",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 191,
+      "type": "TAKEDOWN",
+      "title": "Inside trip/hip throw attempt",
+      "description": "BLACK RASHGUARD attempts an inside trip/hip throw, but GREEN/WHITE STRIPE defends by maintaining balance and stepping out. No takedown is achieved.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Inside trip/hip throw attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Inside trip/hip throw attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 195,
+      "type": "TAKEDOWN",
+      "title": "Double leg takedown attempt",
+      "description": "BLACK RASHGUARD attempts another double leg takedown, which GREEN/WHITE STRIPE defends by sprawling effectively. No takedown is achieved.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Double leg takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Double leg takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 201,
+      "type": "TAKEDOWN",
+      "title": "Outside trip attempt",
+      "description": "Both engage in a standing clinch again. BLACK RASHGUARD attempts an outside trip, but GREEN/WHITE STRIPE defends and maintains their footing.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Outside trip attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Outside trip attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 206,
+      "type": "POSITION",
+      "title": "Reset",
+      "description": "Both RESET (stand up, fist bump, separate), indicating a pause or end of the round.",
+      "attacker": null,
+      "defender": null,
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 207,
+      "type": "POSITION",
+      "title": "Hand fighting",
+      "description": "Both athletes re-engage in hand fighting from a standing position.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Hand fighting",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Hand fighting",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 209,
+      "type": "TAKEDOWN",
+      "title": "Double leg takedown attempt",
+      "description": "BLACK RASHGUARD attempts a double leg takedown, but GREEN/WHITE STRIPE defends by sprawling and pushing away. No takedown is achieved.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Double leg takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Double leg takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 212,
+      "type": "POSITION",
+      "title": "Standing clinch",
+      "description": "Both enter a standing clinch, hand fighting for control.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Standing clinch",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Standing clinch",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 215,
+      "type": "TAKEDOWN",
+      "title": "Single leg takedown attempt",
+      "description": "BLACK RASHGUARD attempts a single leg takedown, but GREEN/WHITE STRIPE defends and hops to avoid being taken down. No takedown is achieved.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Single leg takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Single leg takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 218,
+      "type": "POSITION",
+      "title": "Hand fighting",
+      "description": "Both re-engage in hand fighting.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Hand fighting",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Hand fighting",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 220,
+      "type": "TAKEDOWN",
+      "title": "Double leg takedown attempt",
+      "description": "BLACK RASHGUARD shoots for a double leg takedown, which GREEN/WHITE STRIPE defends with a sprawl.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Double leg takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Double leg takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 222,
+      "type": "TAKEDOWN",
+      "title": "Single leg takedown attempt (transition)",
+      "description": "BLACK RASHGUARD transitions from the defended double leg to a single leg takedown attempt, lifting GREEN/WHITE STRIPE's leg and driving, but GREEN/WHITE STRIPE continues to defend by hopping and maintaining balance. No takedown is achieved.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Single leg takedown attempt (transition) but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Single leg takedown attempt (transition)",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 228,
+      "type": "POSITION",
+      "title": "Reset",
+      "description": "Both RESET (stand up, fist bump, separate), indicating a pause or end of the round.",
+      "attacker": null,
+      "defender": null,
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 240,
+      "type": "POSITION",
+      "title": "Clinch engagement",
+      "description": "Both athletes, BLACK RASHGUARD and GREEN/WHITE STRIPE, start standing in a clinch, seeking grips.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Clinch engagement",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Clinch engagement",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 242,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD initiates a head-and-arm takedown attempt, but GREEN/WHITE STRIPE defends by keeping their balance and breaking grips. They separate and re-engage.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 246,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts another head-and-arm takedown, but GREEN/WHITE STRIPE defends.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 249,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts a third head-and-arm takedown, which GREEN/WHITE STRIPE defends.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 253,
+      "type": "POSITION",
+      "title": "Clinch re-engagement",
+      "description": "They separate, then re-engage in a standing clinch.",
+      "attacker": null,
+      "defender": null,
+      "submission": false,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Clinch re-engagement",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Clinch re-engagement",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 256,
+      "type": "TAKEDOWN",
+      "title": "Hip throw or head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts a hip throw or head-and-arm takedown, but GREEN/WHITE STRIPE defends and pushes away.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Hip throw or head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Hip throw or head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 259,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts another head-and-arm takedown, which GREEN/WHITE STRIPE defends.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 263,
+      "type": "TAKEDOWN",
+      "title": "Headlock throw/takedown",
+      "description": "BLACK RASHGUARD secures a headlock and executes a successful headlock throw/takedown, bringing GREEN/WHITE STRIPE to the mat. Both RESET (stand up, fist bump).",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully completed Headlock throw/takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "blunder",
+          "score": 20,
+          "points": 0,
+          "analysis": "Submitted by Headlock throw/takedown",
+          "betterMove": "Improve defense and escape earlier",
+          "whyBad": "Failed to defend submission"
+        }
+      }
+    },
+    {
+      "timestamp": 266,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts a head-and-arm takedown, which GREEN/WHITE STRIPE defends.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 271,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts a head-and-arm takedown, which GREEN/WHITE STRIPE defends.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 276,
+      "type": "TAKEDOWN",
+      "title": "Headlock throw/takedown",
+      "description": "BLACK RASHGUARD secures a headlock and executes another successful headlock throw/takedown, sending GREEN/WHITE STRIPE to the ground. Both RESET (stand up, fist bump).",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully completed Headlock throw/takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "blunder",
+          "score": 20,
+          "points": 0,
+          "analysis": "Submitted by Headlock throw/takedown",
+          "betterMove": "Improve defense and escape earlier",
+          "whyBad": "Failed to defend submission"
+        }
+      }
+    },
+    {
+      "timestamp": 282,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts a head-and-arm takedown, which GREEN/WHITE STRIPE defends.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 287,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts another head-and-arm takedown, which GREEN/WHITE STRIPE defends.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 291,
+      "type": "TAKEDOWN",
+      "title": "Headlock throw/takedown",
+      "description": "BLACK RASHGUARD secures a headlock and executes a successful headlock throw/takedown, putting GREEN/WHITE STRIPE on the mat. Both RESET (stand up, fist bump).",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully completed Headlock throw/takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "blunder",
+          "score": 20,
+          "points": 0,
+          "analysis": "Submitted by Headlock throw/takedown",
+          "betterMove": "Improve defense and escape earlier",
+          "whyBad": "Failed to defend submission"
+        }
+      }
+    },
+    {
+      "timestamp": 298,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts a head-and-arm takedown, which GREEN/WHITE STRIPE defends and breaks the grip.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 301,
+      "type": "TAKEDOWN",
+      "title": "Head-and-arm takedown attempt",
+      "description": "BLACK RASHGUARD attempts a head-and-arm takedown, which GREEN/WHITE STRIPE defends.",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": false,
+      "attempt": true,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Attempted Head-and-arm takedown attempt but opponent escaped",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 75,
+          "points": 0,
+          "analysis": "Successfully defended Head-and-arm takedown attempt",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "timestamp": 308,
+      "type": "TAKEDOWN",
+      "title": "Headlock throw/takedown",
+      "description": "BLACK RASHGUARD secures a headlock and executes a successful headlock throw/takedown, bringing GREEN/WHITE STRIPE to the ground. Both RESET (stand up, fist bump).",
+      "attacker": "BLACK RASHGUARD",
+      "defender": "GREEN/WHITE STRIPE",
+      "submission": true,
+      "attempt": false,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully completed Headlock throw/takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "blunder",
+          "score": 20,
+          "points": 0,
+          "analysis": "Submitted by Headlock throw/takedown",
+          "betterMove": "Improve defense and escape earlier",
+          "whyBad": "Failed to defend submission"
+        }
+      }
+    }
+  ],
+  "fighter_stats": {
+    "BLACK RASHGUARD": {
+      "submissions": 5,
+      "takedowns": 27,
+      "sweeps": 3,
+      "positions": 15,
+      "escapes": 0,
+      "blunders": 0,
+      "mistakes": 0,
+      "inaccuracies": 28,
+      "total_points": 27
+    },
+    "GREEN/WHITE STRIPE": {
+      "submissions": 0,
+      "takedowns": 1,
+      "sweeps": 0,
+      "positions": 29,
+      "escapes": 0,
+      "blunders": 5,
+      "mistakes": 0,
+      "inaccuracies": 7,
+      "total_points": 84
+    }
+  },
+  "match_summary": {
+    "final_scores": {
+      "BLACK RASHGUARD": 27,
+      "GREEN/WHITE STRIPE": 84
+    },
+    "point_differential": 57,
+    "dominant_fighter": "GREEN/WHITE STRIPE",
+    "key_moment": {
+      "event_index": 1,
+      "timestamp": 0,
+      "title": "BLACK RASHGUARD pulls to closed guard",
+      "fighter": "BLACK RASHGUARD",
+      "points": 3
+    }
+  },
+  "position_timeline": {
+    "duration_seconds": 313.315,
+    "fighter_timelines": {
+      "BLACK RASHGUARD": [
+        {
+          "position": "training",
+          "start": 0,
+          "end": 313.315
+        }
+      ],
+      "GREEN/WHITE STRIPE": [
+        {
+          "position": "training",
+          "start": 0,
+          "end": 313.315
+        }
+      ]
+    },
+    "submissions": [
+      {
+        "fighter": "BLACK RASHGUARD",
+        "type": "Double leg takedown",
+        "timestamp": 164,
+        "from_position": "unknown",
+        "completed": true
+      },
+      {
+        "fighter": null,
+        "type": "Reset",
+        "timestamp": 168,
+        "from_position": "unknown",
+        "completed": true
+      },
+      {
+        "fighter": null,
+        "type": "Reset",
+        "timestamp": 206,
+        "from_position": "unknown",
+        "completed": true
+      },
+      {
+        "fighter": null,
+        "type": "Reset",
+        "timestamp": 228,
+        "from_position": "unknown",
+        "completed": true
+      },
+      {
+        "fighter": "BLACK RASHGUARD",
+        "type": "Headlock throw/takedown",
+        "timestamp": 263,
+        "from_position": "unknown",
+        "completed": true
+      },
+      {
+        "fighter": "BLACK RASHGUARD",
+        "type": "Headlock throw/takedown",
+        "timestamp": 276,
+        "from_position": "unknown",
+        "completed": true
+      },
+      {
+        "fighter": "BLACK RASHGUARD",
+        "type": "Headlock throw/takedown",
+        "timestamp": 291,
+        "from_position": "unknown",
+        "completed": true
+      },
+      {
+        "fighter": "BLACK RASHGUARD",
+        "type": "Headlock throw/takedown",
+        "timestamp": 308,
+        "from_position": "unknown",
+        "completed": true
+      }
+    ]
+  },
+  "key_moments": [
+    {
+      "event_index": 52,
+      "timestamp": 164,
+      "title": "Double leg takedown",
+      "fighter": "BLACK RASHGUARD",
+      "importance": 10,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully completed Double leg takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "blunder",
+          "score": 20,
+          "points": 0,
+          "analysis": "Submitted by Double leg takedown",
+          "betterMove": "Improve defense and escape earlier",
+          "whyBad": "Failed to defend submission"
+        }
+      }
+    },
+    {
+      "event_index": 52,
+      "timestamp": 164,
+      "title": "Double leg takedown",
+      "fighter": "GREEN/WHITE STRIPE",
+      "importance": 10,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "excellent",
+          "score": 90,
+          "points": 2,
+          "analysis": "Successfully completed Double leg takedown",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "blunder",
+          "score": 20,
+          "points": 0,
+          "analysis": "Submitted by Double leg takedown",
+          "betterMove": "Improve defense and escape earlier",
+          "whyBad": "Failed to defend submission"
+        }
+      }
+    },
+    {
+      "event_index": 53,
+      "timestamp": 168,
+      "title": "Reset",
+      "fighter": "BLACK RASHGUARD",
+      "importance": 10,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "event_index": 53,
+      "timestamp": 168,
+      "title": "Reset",
+      "fighter": "GREEN/WHITE STRIPE",
+      "importance": 10,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "event_index": 63,
+      "timestamp": 206,
+      "title": "Reset",
+      "fighter": "BLACK RASHGUARD",
+      "importance": 10,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "event_index": 63,
+      "timestamp": 206,
+      "title": "Reset",
+      "fighter": "GREEN/WHITE STRIPE",
+      "importance": 10,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "event_index": 71,
+      "timestamp": 228,
+      "title": "Reset",
+      "fighter": "BLACK RASHGUARD",
+      "importance": 10,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    },
+    {
+      "event_index": 71,
+      "timestamp": 228,
+      "title": "Reset",
+      "fighter": "GREEN/WHITE STRIPE",
+      "importance": 10,
+      "perspectives": {
+        "BLACK RASHGUARD": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        },
+        "GREEN/WHITE STRIPE": {
+          "quality": "good",
+          "score": 70,
+          "points": 0,
+          "analysis": "Observed Reset",
+          "betterMove": null,
+          "whyBad": null
+        }
+      }
+    }
+  ]
+}
