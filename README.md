@@ -1,109 +1,53 @@
-# AI Vision
+# AI Vision - GAA Player Detection
 
-A collection of AI vision projects for sports analytics, focusing on object detection, tracking, segmentation, and re-identification for various sports including GAA, BJJ, MMA, and football.
+Repository for GAA (Gaelic Football) player detection and tracking experiments.
 
-## Projects
-
-### hooper-glean
-Sports analytics pipeline adapted from the Hooper BJJ system. Includes:
-- Object detection and tracking for athletes
-- Keypoint detection for pose analysis
-- SAM2-powered segmentation
-- Person re-identification
-- Scripts for GAA player detection and analysis
-
-**Key Scripts:**
-- `scripts/gaa_identify.py` - GAA player detection and tracking with crowd filtering
-- `scripts/bjj_identify.py` - BJJ athlete tracking and analysis
-- `scripts/gaa_sam.py` - SAM2-powered segmentation for GAA
-
-### player-counting-sam2
-Player counting and segmentation system using SAM2 (Segment Anything Model 2).
-- Frame extraction from video
-- Person detection and segmentation
-- Player tracking across frames
-- Counting unique players
-
-### mma-person-reid-A1
-MMA person re-identification pipeline for tracking fighters across different camera angles and time periods.
-- Frame extraction
-- Person segmentation
-- Feature embedding extraction
-- Re-identification across video segments
-- People counting
-
-### Football-Object-Detection
-Football/soccer object detection system (external project from [Mostafa-Nafie](https://github.com/Mostafa-Nafie/Football-Object-Detection)).
-
-## Setup
-
-Each project has its own dependencies and setup requirements. Refer to individual project READMEs:
-- `hooper-glean/README.md`
-- `player-counting-sam2/QUICKSTART.md`
-- `mma-person-reid-A1/QUICKSTART.md`
-- `Football-Object-Detection/README.md`
-
-## General Requirements
-
-Common dependencies across projects:
-- Python 3.8+
-- PyTorch with CUDA support
-- OpenCV
-- Detectron2
-- SAM2 (Segment Anything Model 2)
-
-## Usage
-
-### GAA Player Detection Example
-
-```bash
-cd hooper-glean
-python scripts/gaa_identify.py \
-    --video path/to/gaa_video.mp4 \
-    --output-dir outputs/gaa_analysis \
-    --batch-size 16 \
-    --min-track-length 3
-```
-
-### BJJ Analysis Example
-
-```bash
-cd hooper-glean
-python scripts/bjj_identify.py \
-    --video path/to/bjj_video.mp4 \
-    --output-dir outputs/bjj_analysis
-```
-
-## Features
-
-- Real-time object detection and tracking
-- GPU-accelerated inference with batching
-- SAM2 segmentation for high-quality masks
-- Crowd filtering and athlete classification
-- Person re-identification embeddings
-- Multi-sport support (GAA, BJJ, MMA, Football)
-
-## Repository Structure
+## Structure
 
 ```
 ai-vision/
-├── hooper-glean/          # Main sports analytics pipeline
-├── player-counting-sam2/  # SAM2-based player counting
-├── mma-person-reid-A1/    # MMA re-identification
-├── Football-Object-Detection/  # Football detection (submodule)
-├── outputs/               # Generated outputs (excluded from git)
-└── README.md
+├── inputs/                   # Test videos
+│   ├── gaa_full.mp4         # Full 3.5min source (146MB)
+│   ├── gaa_10s.mp4          # 10 second test clip
+│   ├── gaa_30s.mp4          # 30 second test clip
+│   ├── gaa_1min.mp4         # 1 minute test clip
+│   └── gaa_2min.mp4         # 2 minute test clip
+│
+├── outputs/                  # Processed results
+│   └── gaa_10s_example/     # Example successful output
+│
+├── hooper-glean/            # BJJ/GAA detection pipeline (Detectron2 + SAM2 + Re-ID)
+├── Football-Object-Detection/ # Simple YOLO-based approach
+├── player-counting-sam2/    # SAM2 player counting experiments
+└── mma-person-reid-A1/      # Person re-identification experiments
 ```
 
-## Notes
+## Test Videos
 
-- Large video files, model checkpoints, and outputs are excluded from version control
-- The `Football-Object-Detection` project is included as a git submodule
-- GPU with adequate VRAM (8GB+) recommended for optimal performance
+All clips from "The Magic of Gaelic Football" YouTube compilation:
+- **Full video:** 212 seconds, 1920x1080, 60fps
+- **Challenge:** Multiple matches with different teams/colors
+- Test clips range from 10s to 2min for different approaches
 
-## License
+## Approaches Tested
 
-Each project may have its own license. Please refer to individual project directories for details.
+1. **hooper-glean pipeline** (scripts/gaa_identify.py)
+   - Detectron2 for person detection
+   - Solider for re-identification 
+   - SAM2 for segmentation (optional)
+   - Works: 10s clips (19MB output)
+   - Fails: 1min+ clips (OOM errors)
 
+2. **Football-Object-Detection**
+   - Simple YOLO detection
+   - Color-based team classification
+   - Problem: Assumes same teams throughout video
 
+3. **Others:** Various SAM2 and re-ID experiments
 
+## Current Goal
+
+Create a hero video for website with clean player detection. Need to find an approach that:
+- Handles scene transitions between different matches
+- Processes efficiently without OOM errors
+- Produces clean visual output
