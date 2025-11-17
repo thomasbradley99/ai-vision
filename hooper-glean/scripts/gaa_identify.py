@@ -638,27 +638,15 @@ def render_tracks(
                 x2 = int(np.clip(x2, x1 + 1, width))
                 y2 = int(np.clip(y2, y1 + 1, height))
 
-                # Different colors/styles for athletes vs crowd
+                # Different colors/styles for athletes vs crowd (no labels)
                 if track_type == 'athlete':
                     color = id_to_color(track_id)
                     thickness = 2
-                    label = f"Player {track_id}"
                 else:  # crowd
                     color = (128, 128, 128)  # Gray for crowd
                     thickness = 1
-                    label = f"Crowd {track_id}"
                 
                 cv2.rectangle(frame, (x1, y1), (x2, y2), color, thickness)
-                cv2.putText(
-                    frame,
-                    label,
-                    (x1, max(20, y1 - 10)),
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    0.5 if track_type == 'crowd' else 0.6,
-                    color,
-                    1 if track_type == 'crowd' else 2,
-                    lineType=cv2.LINE_AA,
-                )
 
             writer.write(frame)
             frame_idx += 1
