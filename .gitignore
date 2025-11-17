@@ -51,6 +51,15 @@ outputs/
 *.mkv
 *.webm
 
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
 # Environment
 .env
 *.log
