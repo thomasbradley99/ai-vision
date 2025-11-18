@@ -259,7 +259,32 @@ class GAATeamTracker:
             
             median_player_area = np.median(player_areas) if len(player_areas) > 0 else float('inf')
             
-            # Second pass: render with ball filtering
+            # Second pass: find the best ball candidate (most square one)
+            ball_candidates = []
+            for box in boxes:
+                cls = int(box.cls.cpu().numpy()[0])
+                track_id = int(box.id.cpu().numpy()[0]) if box.id is not None else None
+                
+                if cls != 0 and track_id is not None:  # Not a player (likely ball)
+                    x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
+                    width = x2 - x1
+                    height = y2 - y1
+                    area = width * height
+                    aspect_ratio = height / width if width > 0 else 0
+                    
+                    # Filter 1: Ball must be < 40% of median player size
+                    # Filter 2: Ball must be roughly square (aspect ratio 0.5-2.0)
+                    if area < 0.4 * median_player_area and 0.5 <= aspect_ratio <= 2.0:
+                        # Score by how close aspect ratio is to 1.0 (perfect square)
+                        squareness_score = 1.0 - abs(1.0 - aspect_ratio)
+                        ball_candidates.append((squareness_score, x1, y1, x2, y2, track_id))
+            
+            # Pick the most square ball (only one ball in the game!)
+            best_ball = None
+            if ball_candidates:
+                best_ball = max(ball_candidates, key=lambda x: x[0])
+            
+            # Third pass: render with single ball and all players
             for box in boxes:
                 # Get detection info
                 x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
@@ -271,21 +296,13 @@ class GAATeamTracker:
                 if track_id is None:
                     continue
                 
-                # Handle ball separately with filtering
+                # Handle ball - only render if it's the best ball
                 if cls != 0:  # Not a player (likely ball)
-                    # Ball validation filters
-                    width = x2 - x1
-                    height = y2 - y1
-                    area = width * height
-                    aspect_ratio = height / width if width > 0 else 0
-                    
-                    # Filter 1: Ball must be < 40% of median player size
-                    # Filter 2: Ball must be roughly square (aspect ratio 0.5-2.0)
-                    if area < 0.4 * median_player_area and 0.5 <= aspect_ratio <= 2.0:
-                        cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 255, 255), 3)  # White box
-                        cv2.putText(frame, "BALL", (x1, y1-10),
+                    if best_ball and track_id == best_ball[5]:
+                        _, bx1, by1, bx2, by2, _ = best_ball
+                        cv2.rectangle(frame, (bx1, by1), (bx2, by2), (255, 255, 255), 3)  # White box
+                        cv2.putText(frame, "BALL", (bx1, by1-10),
                                   cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
-                    # Otherwise skip (likely false positive)
                     continue
                 
                 # Extract player crop and jersey color

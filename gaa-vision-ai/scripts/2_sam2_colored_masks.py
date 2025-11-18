@@ -131,7 +131,7 @@ class TeamColorAssigner:
 class GAATeamTrackerSAM2:
     """Main tracking and SAM2 segmentation pipeline."""
     
-    def __init__(self, video_path, output_path, model_path, sam2_model, frame_stride, sample_frames=50):
+    def __init__(self, video_path, output_path, model_path, sam2_model, frame_stride, sample_frames=50, max_duration=None, offload_to_cpu=False):
         self.video_path = Path(video_path)
         self.output_path = Path(output_path)
         self.model_path = Path(model_path)
@@ -140,13 +140,20 @@ class GAATeamTrackerSAM2:
         self.sam2_checkpoint = SAM2_CHECKPOINTS[sam2_model]
         self.frame_stride = frame_stride
         self.sample_frames = sample_frames
+        self.max_duration = max_duration
+        self.offload_to_cpu = offload_to_cpu
         
         print(f"[Config] SAM2 model: {sam2_model}")
         print(f"[Config] Frame stride: {frame_stride}")
+        if offload_to_cpu:
+            print(f"[Config] SAM2 offload to CPU: ENABLED (slower but uses ~80% less GPU memory)")
+        if max_duration:
+            print(f"[Config] Max duration: {max_duration}s (MEMORY TEST MODE)")
         
         # Load YOLO model
         print(f"[Tracker] Loading YOLO model from {model_path}")
         self.model = YOLO(str(model_path))
+        self.log_gpu_memory("After YOLO model load")
         
         # Initialize team assigner
         self.team_assigner = TeamColorAssigner()
@@ -157,6 +164,14 @@ class GAATeamTrackerSAM2:
         # Track data
         self.track_first_frames = {}  # track_id -> first frame it appeared
         self.track_boxes = {}  # track_id -> {frame_idx: box}
+        self.ball_track_ids = set()  # Track IDs that are balls (not players)
+    
+    def log_gpu_memory(self, stage):
+        """Log current GPU memory usage."""
+        if torch.cuda.is_available():
+            allocated = torch.cuda.memory_allocated() / 1024**3  # GB
+            reserved = torch.cuda.memory_reserved() / 1024**3  # GB
+            print(f"[GPU Memory @ {stage}] Allocated: {allocated:.2f}GB | Reserved: {reserved:.2f}GB")
         
     def extract_frames(self, frame_dir):
         """Extract frames from video to directory (with stride)."""
@@ -164,12 +179,24 @@ class GAATeamTrackerSAM2:
         frame_dir.mkdir(parents=True, exist_ok=True)
         
         cap = cv2.VideoCapture(str(self.video_path))
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        max_frames = None
+        
+        if self.max_duration:
+            max_frames = int(self.max_duration * fps)
+            print(f"[SAM2] Limiting to first {max_frames} frames ({self.max_duration}s @ {fps:.1f}fps)")
+        
         frame_idx = 0
         extracted_idx = 0
         
         while cap.isOpened():
             ret, frame = cap.read()
             if not ret:
+                break
+            
+            # Check duration limit
+            if max_frames and frame_idx >= max_frames:
+                print(f"[SAM2] Reached duration limit at frame {frame_idx}")
                 break
             
             # Only extract every Nth frame
@@ -182,6 +209,7 @@ class GAATeamTrackerSAM2:
         
         cap.release()
         print(f"[SAM2] Extracted {extracted_idx} frames from {frame_idx} total")
+        self.log_gpu_memory("After frame extraction")
         return frame_idx, extracted_idx
     
     def random_sample_colors(self):
@@ -248,8 +276,15 @@ class GAATeamTrackerSAM2:
             print(f"[ERROR] Could not open video: {self.video_path}")
             return
         
+        fps = cap.get(cv2.CAP_PROP_FPS)
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        
+        if self.max_duration:
+            max_frames = int(self.max_duration * fps)
+            total_frames = min(total_frames, max_frames)
+        
         frame_idx = 0
+        ball_squareness = {}  # track_id -> list of squareness scores
         
         with tqdm(total=total_frames, desc="Analyzing video") as pbar:
             while cap.isOpened():
@@ -257,18 +292,53 @@ class GAATeamTrackerSAM2:
                 if not ret:
                     break
                 
+                # Check duration limit
+                if self.max_duration and frame_idx >= total_frames:
+                    break
+                
                 results = self.model.track(frame, persist=True, conf=0.3, verbose=False)
                 
+                # First pass: collect player sizes for ball filtering
+                player_areas = []
+                if results[0].boxes is not None and len(results[0].boxes) > 0:
+                    for box in results[0].boxes:
+                        cls = int(box.cls.cpu().numpy()[0])
+                        if cls == 0:  # Player
+                            x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
+                            area = (x2 - x1) * (y2 - y1)
+                            player_areas.append(area)
+                
+                median_player_area = np.median(player_areas) if len(player_areas) > 0 else float('inf')
+                
+                # Second pass: collect tracks and score balls
                 if results[0].boxes is not None and len(results[0].boxes) > 0:
                     for box in results[0].boxes:
                         cls = int(box.cls.cpu().numpy()[0])
                         track_id = int(box.id.cpu().numpy()[0]) if box.id is not None else None
                         
-                        if track_id is None or cls != 0:  # Only players with track IDs
+                        if track_id is None:  # Need track ID
                             continue
                         
                         x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
                         box_coords = [x1, y1, x2, y2]
+                        width = x2 - x1
+                        height = y2 - y1
+                        area = width * height
+                        aspect_ratio = height / width if width > 0 else 0
+                        
+                        # Track both players (cls=0) and balls (cls!=0)
+                        is_ball = (cls != 0)
+                        if is_ball:
+                            # Filter: Ball must be < 40% of median player size and roughly square
+                            if area < 0.4 * median_player_area and 0.5 <= aspect_ratio <= 2.0:
+                                # Score by squareness (closer to 1.0 = more square)
+                                squareness = 1.0 - abs(1.0 - aspect_ratio)
+                                if track_id not in ball_squareness:
+                                    ball_squareness[track_id] = []
+                                ball_squareness[track_id].append(squareness)
+                                self.ball_track_ids.add(track_id)
+                            else:
+                                continue  # Skip invalid ball candidates
                         
                         # Record first frame
                         if track_id not in self.track_first_frames:
@@ -279,20 +349,36 @@ class GAATeamTrackerSAM2:
                             self.track_boxes[track_id] = {}
                         self.track_boxes[track_id][frame_idx] = box_coords
                         
-                        # Assign team
-                        player_crop = frame[y1:y2, x1:x2]
-                        if player_crop.size > 0:
-                            jersey_color = self.team_assigner.extract_jersey_color(player_crop)
-                            self.team_assigner.assign_team(track_id, jersey_color)
+                        # Assign team (only for players, not balls)
+                        if not is_ball:
+                            player_crop = frame[y1:y2, x1:x2]
+                            if player_crop.size > 0:
+                                jersey_color = self.team_assigner.extract_jersey_color(player_crop)
+                                self.team_assigner.assign_team(track_id, jersey_color)
                 
                 frame_idx += 1
                 pbar.update(1)
         
         cap.release()
         
+        # Filter to only the most square ball (only one ball in the game!)
+        if len(ball_squareness) > 1:
+            avg_squareness = {tid: np.mean(scores) for tid, scores in ball_squareness.items()}
+            best_ball_id = max(avg_squareness, key=avg_squareness.get)
+            print(f"[Tracker] Found {len(ball_squareness)} ball candidates, keeping most square one (ID {best_ball_id})")
+            # Remove all other balls
+            for ball_id in list(self.ball_track_ids):
+                if ball_id != best_ball_id:
+                    self.ball_track_ids.remove(ball_id)
+                    if ball_id in self.track_first_frames:
+                        del self.track_first_frames[ball_id]
+                    if ball_id in self.track_boxes:
+                        del self.track_boxes[ball_id]
+        
         print(f"[Tracker] PASS 2 complete: Found {len(self.track_first_frames)} unique tracks")
         print(f"  Team 0: {list(self.team_assigner.track_teams.values()).count(0)} players")
         print(f"  Team 1: {list(self.team_assigner.track_teams.values()).count(1)} players")
+        print(f"  Balls: {len(self.ball_track_ids)}")
     
     def build_sam2_prompts(self):
         """Build SAM2 prompts from YOLO tracks (mapped to extracted frame indices)."""
@@ -324,15 +410,17 @@ class GAATeamTrackerSAM2:
         
         print(f"[SAM2] Loading {self.sam2_model} model from {self.sam2_checkpoint}...")
         sam_model = build_sam2_video_predictor(self.sam2_config, str(self.sam2_checkpoint))
+        self.log_gpu_memory("After SAM2 model load")
         
         print(f"[SAM2] Initializing inference state...")
         with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
             inference_state = sam_model.init_state(
                 video_path=str(frame_dir),
-                offload_video_to_cpu=False,
-                offload_state_to_cpu=False,
-                async_loading_frames=False,
+                offload_video_to_cpu=self.offload_to_cpu,
+                offload_state_to_cpu=self.offload_to_cpu,
+                async_loading_frames=self.offload_to_cpu,
             )
+        self.log_gpu_memory("After init_state (frames loaded)")
         
         print(f"[SAM2] Adding prompts and propagating...")
         video_segments = {}
@@ -348,6 +436,7 @@ class GAATeamTrackerSAM2:
                     labels=labels,
                     box=box,
                 )
+            self.log_gpu_memory("After adding prompts")
             
             # Propagate backward
             print("[SAM2] Propagating backward...")
@@ -358,6 +447,7 @@ class GAATeamTrackerSAM2:
                     out_obj_id: (out_mask_logits[j] > 0.0).cpu().numpy()
                     for j, out_obj_id in enumerate(out_obj_ids)
                 }
+            self.log_gpu_memory("After backward propagation")
             
             # Propagate forward
             print("[SAM2] Propagating forward...")
@@ -368,6 +458,7 @@ class GAATeamTrackerSAM2:
                     out_obj_id: (out_mask_logits[j] > 0.0).cpu().numpy()
                     for j, out_obj_id in enumerate(out_obj_ids)
                 }
+            self.log_gpu_memory("After forward propagation")
         
         sam_model.reset_state(inference_state)
         print(f"[SAM2] Segmentation complete!")
@@ -402,16 +493,36 @@ class GAATeamTrackerSAM2:
                 overlay = frame.copy()
                 
                 for track_id, mask in video_segments[extracted_frame_idx].items():
-                    team = self.team_assigner.track_teams.get(track_id)
+                    # Check if this is a ball
+                    is_ball = track_id in self.ball_track_ids
                     
-                    if team is not None:
-                        color = self.team_colors[team]
-                        # Apply colored mask
-                        mask_bool = mask[0] > 0
-                        overlay[mask_bool] = color
+                    if is_ball:
+                        # Ball gets dark kelly green mask (#016F32)
+                        color = (50, 111, 1)  # BGR format
+                        label = "BALL"
+                    else:
+                        # Players get team colors
+                        team = self.team_assigner.track_teams.get(track_id)
+                        if team is not None:
+                            color = self.team_colors[team]
+                            label = f"T{team}"
+                        else:
+                            continue
+                    
+                    # Apply colored mask
+                    mask_bool = mask[0] > 0
+                    overlay[mask_bool] = color
+                    
+                    # Add text label (find top-left corner of mask)
+                    mask_coords = np.argwhere(mask_bool)
+                    if len(mask_coords) > 0:
+                        y_min = mask_coords[:, 0].min()
+                        x_min = mask_coords[:, 1].min()
+                        cv2.putText(frame, label, (x_min, y_min - 10),
+                                  cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
                 
-                # Blend overlay with original frame
-                alpha = 0.6
+                # Blend overlay with original frame (more transparent)
+                alpha = 0.4
                 frame = cv2.addWeighted(overlay, alpha, frame, 1 - alpha, 0)
             
             out.write(frame)
@@ -474,6 +585,10 @@ def main():
                        help="Process every Nth frame for SAM2 (default: 2 for speed)")
     parser.add_argument("--sample-frames", type=int, default=50, 
                        help="Number of random frames to sample for K-means initialization (default: 50)")
+    parser.add_argument("--max-duration", type=float, default=None,
+                       help="Limit processing to first N seconds (for memory testing)")
+    parser.add_argument("--offload-to-cpu", action="store_true",
+                       help="Offload SAM2 video frames and state to CPU (slower but uses ~80%% less GPU memory)")
     args = parser.parse_args()
     
     tracker = GAATeamTrackerSAM2(
@@ -482,7 +597,9 @@ def main():
         model_path=args.model,
         sam2_model=args.sam2_model,
         frame_stride=args.frame_stride,
-        sample_frames=args.sample_frames
+        sample_frames=args.sample_frames,
+        max_duration=args.max_duration,
+        offload_to_cpu=args.offload_to_cpu
     )
     
     tracker.run()
