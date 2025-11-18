@@ -350,15 +350,18 @@ class HybridTeamBallTracker:
                             continue
                         
                         x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
+                        player_crop = frame[y1:y2, x1:x2]
                         
-                        # Get team (already assigned in PASS 2)
-                        team = self.team_assigner.track_teams.get(track_id, None)
-                        
-                        if team is not None:
-                            color = self.team_colors[team]
-                            cv2.rectangle(frame, (x1, y1), (x2, y2), color, 3)
-                            cv2.putText(frame, f"T{team}", (x1, y1-10),
-                                      cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+                        # Re-assign team during rendering (track IDs reset in new video capture!)
+                        if player_crop.size > 0:
+                            jersey_color = self.team_assigner.extract_jersey_color(player_crop)
+                            team = self.team_assigner.assign_team(track_id, jersey_color)
+                            
+                            if team is not None:
+                                color = self.team_colors[team]
+                                cv2.rectangle(frame, (x1, y1), (x2, y2), color, 3)
+                                cv2.putText(frame, f"T{team}", (x1, y1-10),
+                                          cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
                 
                 # Overlay ball SAM2 mask
                 sam_frame_idx = frame_idx // self.frame_stride
@@ -421,7 +424,7 @@ def main():
     parser.add_argument("--output", required=True, help="Output video")
     parser.add_argument("--model", required=True, help="YOLO model")
     parser.add_argument("--sam2-checkpoint", 
-                       default="../hooper-glean/checkpoints/SAM2-InstanceSegmentation/sam2.1_hiera_tiny.pt")
+                       default="/home/ubuntu/clann/ai-vision/hooper-glean/checkpoints/SAM2-InstanceSegmentation/sam2.1_hiera_tiny.pt")
     parser.add_argument("--sample-frames", type=int, default=50)
     parser.add_argument("--frame-stride", type=int, default=2)
     
