@@ -350,7 +350,9 @@ class HybridTeamBallTracker:
                             continue
                         
                         x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
-                        team = self.team_assigner.assign_team(track_id, None)
+                        
+                        # Get team (already assigned in PASS 2)
+                        team = self.team_assigner.track_teams.get(track_id, None)
                         
                         if team is not None:
                             color = self.team_colors[team]
