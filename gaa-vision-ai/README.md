@@ -32,7 +32,7 @@ cd /home/ubuntu/clann/ai-vision/gaa-vision-ai
 
 conda activate hooper-ai
 
-python scripts/gaa_team_tracker.py \
+python scripts/1_ball_filter_jersey_color_bb.py \
   --video /path/to/input.mp4 \
   --output /path/to/output.mp4 \
   --model /path/to/yolo_model.pt \
@@ -42,7 +42,7 @@ python scripts/gaa_team_tracker.py \
 ## Example
 
 ```bash
-python scripts/gaa_team_tracker.py \
+python scripts/1_ball_filter_jersey_color_bb.py \
   --video ../inputs2/gaa12.mp4 \
   --output outputs/gaa12_tracked.mp4 \
   --model /home/ubuntu/clann/ai-vision/Football-Object-Detection/weights/best.pt \
@@ -51,8 +51,9 @@ python scripts/gaa_team_tracker.py \
 
 ## Output
 
-- Team 0: Blue boxes
-- Team 1: Red boxes
+- Team 0: Bounding boxes in actual jersey color (from K-means centroid)
+- Team 1: Bounding boxes in actual jersey color (from K-means centroid)
+- Ball: Yellow box labeled "BALL" (filtered by size + aspect ratio)
 - Each player labeled with Team (e.g., "T0")
 - Two-pass approach: random sampling first, then full video processing
 

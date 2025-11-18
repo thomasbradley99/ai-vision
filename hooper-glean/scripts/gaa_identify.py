@@ -756,7 +756,8 @@ def main():
     # Always render video
     print("\nRendering overlay video...")
     render_start = time.time()
-    render_path = args.render_path or (args.out_dir / "player_overlay.mp4")
+    # Use output directory name as video filename
+    render_path = args.render_path or (args.out_dir / f"{args.out_dir.name}.mp4")
     render_tracks(
         args.video,
         tracks,

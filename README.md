@@ -8,6 +8,7 @@ Repository for GAA (Gaelic Football) player detection and tracking experiments.
 ai-vision/
 ├── inputs/                   # Test videos
 │   ├── gaa_full.mp4         # Full 3.5min source (146MB)
+│   ├── gaa_2s.mp4           # 2 second test clip (seconds 10-12)
 │   ├── gaa_10s.mp4          # 10 second test clip
 │   ├── gaa_30s.mp4          # 30 second test clip
 │   ├── gaa_1min.mp4         # 1 minute test clip
