@@ -282,9 +282,9 @@ class GAATeamTracker:
                     # Filter 1: Ball must be < 40% of median player size
                     # Filter 2: Ball must be roughly square (aspect ratio 0.5-2.0)
                     if area < 0.4 * median_player_area and 0.5 <= aspect_ratio <= 2.0:
-                        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 255), 3)  # Yellow box
+                        cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 255, 255), 3)  # White box
                         cv2.putText(frame, "BALL", (x1, y1-10),
-                                  cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
+                                  cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
                     # Otherwise skip (likely false positive)
                     continue
                 
