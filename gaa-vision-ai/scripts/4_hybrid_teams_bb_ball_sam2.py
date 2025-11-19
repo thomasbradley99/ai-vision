@@ -137,6 +137,9 @@ class HybridTeamBallTracker:
         self.ball_detections = []  # Store all ball detections for SAM2
         self.ball_frames = set()  # Frames where YOLO detected valid ball
         
+        # Store tracking results from Pass 2 for replay in Pass 5
+        self.tracking_results = []  # List of (frame_idx, boxes_data) tuples
+        
         # SAM2 (lazy load)
         self.sam2_model = None
     
@@ -233,9 +236,22 @@ class HybridTeamBallTracker:
             results = self.model.track(frame, persist=True, conf=0.3, verbose=False)
             
             if results[0].boxes is None or len(results[0].boxes) == 0:
+                self.tracking_results.append((frame_idx - 1, []))
                 continue
             
             boxes = results[0].boxes
+            
+            # Store boxes for replay in Pass 5 (ensure temporal consistency!)
+            boxes_data = []
+            for box in boxes:
+                box_dict = {
+                    'xyxy': box.xyxy[0].cpu().numpy(),
+                    'cls': int(box.cls.cpu().numpy()[0]),
+                    'track_id': int(box.id.cpu().numpy()[0]) if box.id is not None else None,
+                    'conf': float(box.conf.cpu().numpy()[0])
+                }
+                boxes_data.append(box_dict)
+            self.tracking_results.append((frame_idx - 1, boxes_data))
             
             # First pass: collect player sizes for ball filtering (EXACT script 1)
             player_areas = []
@@ -491,9 +507,10 @@ class HybridTeamBallTracker:
     def render_hybrid(self, ball_segments):
         """
         PASS 5: Render with script 1's EXACT player logic + SAM2 ball overlay.
-        Player rendering is IDENTICAL to script 1.
+        Now uses STORED tracking results from Pass 2 for temporal consistency!
         """
-        print(f"[Renderer] Rendering hybrid video (script 1 player logic + SAM2 ball)...")
+        print(f"[Renderer] Rendering hybrid video using stored tracking results...")
+        print(f"[Renderer] Stored {len(self.tracking_results)} frames of tracking data")
         
         cap = cv2.VideoCapture(str(self.video_path))
         if not cap.isOpened():
@@ -514,23 +531,20 @@ class HybridTeamBallTracker:
         
         frame_idx = 0
         
-        while cap.isOpened():
+        for stored_frame_idx, boxes_data in self.tracking_results:
             ret, frame = cap.read()
             if not ret:
                 break
             
-            # Run YOLO detection with tracking (EXACT script 1)
-            results = self.model.track(frame, persist=True, conf=0.3, verbose=False)
-            
-            if results[0].boxes is not None and len(results[0].boxes) > 0:
-                boxes = results[0].boxes
+            # Use stored tracking results (ensures temporal consistency!)
+            if len(boxes_data) > 0:
                 
                 # First pass: collect player sizes for ball filtering (EXACT script 1)
                 player_areas = []
-                for box in boxes:
-                    cls = int(box.cls.cpu().numpy()[0])
+                for box_dict in boxes_data:
+                    cls = box_dict['cls']
                     if cls == 0:  # Player
-                        x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
+                        x1, y1, x2, y2 = map(int, box_dict['xyxy'])
                         area = (x2 - x1) * (y2 - y1)
                         player_areas.append(area)
                 
@@ -538,12 +552,12 @@ class HybridTeamBallTracker:
                 
                 # Second pass: find the best ball candidate (most square) - EXACT script 1
                 ball_candidates = []
-                for box in boxes:
-                    cls = int(box.cls.cpu().numpy()[0])
-                    track_id = int(box.id.cpu().numpy()[0]) if box.id is not None else None
+                for box_dict in boxes_data:
+                    cls = box_dict['cls']
+                    track_id = box_dict['track_id']
                     
                     if cls != 0 and track_id is not None:  # Not a player (likely ball)
-                        x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
+                        x1, y1, x2, y2 = map(int, box_dict['xyxy'])
                         width_b = x2 - x1
                         height_b = y2 - y1
                         area = width_b * height_b
@@ -562,10 +576,10 @@ class HybridTeamBallTracker:
                     best_ball = max(ball_candidates, key=lambda x: x[0])
                 
                 # Third pass: render ALL detections with bounding boxes (EXACT script 1)
-                for box in boxes:
-                    x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().numpy())
-                    cls = int(box.cls.cpu().numpy()[0])
-                    track_id = int(box.id.cpu().numpy()[0]) if box.id is not None else None
+                for box_dict in boxes_data:
+                    x1, y1, x2, y2 = map(int, box_dict['xyxy'])
+                    cls = box_dict['cls']
+                    track_id = box_dict['track_id']
                     
                     if track_id is None:
                         continue
