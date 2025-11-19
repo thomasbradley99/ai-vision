@@ -1,7 +1,7 @@
 #!/bin/bash
 # Process ALL 13 clips with fixed hybrid approach
 
-INPUT_DIR="/home/ubuntu/clann/ai-vision/inputs2"
+INPUT_DIR="/home/ubuntu/clann/ai-vision/gaa-vision-ai/inputs2"
 OUTPUT_DIR="/home/ubuntu/clann/ai-vision/gaa-vision-ai/outputs/hybrid_clips"
 SCRIPT="/home/ubuntu/clann/ai-vision/gaa-vision-ai/scripts/4_hybrid_teams_bb_ball_sam2.py"
 MODEL="/home/ubuntu/clann/ai-vision/Football-Object-Detection/weights/best.pt"

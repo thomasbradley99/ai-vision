@@ -3,7 +3,7 @@
 
 set -e
 
-INPUT_DIR="/home/ubuntu/clann/ai-vision/inputs2"
+INPUT_DIR="/home/ubuntu/clann/ai-vision/gaa-vision-ai/inputs2"
 OUTPUT_DIR="/home/ubuntu/clann/ai-vision/gaa-vision-ai/outputs/hero_clips"
 MODEL_PATH="/home/ubuntu/clann/ai-vision/Football-Object-Detection/weights/best.pt"
 SCRIPT_PATH="/home/ubuntu/clann/ai-vision/gaa-vision-ai/scripts/1_ball_filter_jersey_color_bb.py"
