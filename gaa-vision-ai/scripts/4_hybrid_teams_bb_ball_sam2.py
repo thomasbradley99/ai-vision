@@ -585,13 +585,13 @@ class HybridTeamBallTracker:
                     if track_id is None:
                         continue
                     
-                    # Handle ball - render white bounding box if it's the best ball (EXACT script 1)
+                    # Handle ball - render purple bounding box if it's the best ball
                     if cls != 0:  # Not a player (likely ball)
                         if best_ball and track_id == best_ball[5]:
                             _, bx1, by1, bx2, by2, _ = best_ball
-                            cv2.rectangle(frame, (bx1, by1), (bx2, by2), (255, 255, 255), 3)  # White box
+                            cv2.rectangle(frame, (bx1, by1), (bx2, by2), (226, 43, 138), 3)  # Joker purple (BGR: #8A2BE2)
                             cv2.putText(frame, "BALL", (bx1, by1-10),
-                                      cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+                                      cv2.FONT_HERSHEY_SIMPLEX, 0.6, (226, 43, 138), 2)
                         continue
                     
                     # Handle players - extract player crop and jersey color (with grass filtering!)
@@ -657,15 +657,15 @@ class HybridTeamBallTracker:
                                 if distance > 300:
                                     continue  # Reject this mask - ball teleported
                             
-                            # Valid ball mask - overlay Clann green (#016F32)
+                            # Valid ball mask - overlay Joker purple (#8A2BE2)
                             overlay = frame.copy()
-                            overlay[mask] = (50, 111, 1)  # Clann Dark Kelly Green (BGR: #016F32)
+                            overlay[mask] = (226, 43, 138)  # Joker purple (BGR: #8A2BE2)
                             frame = cv2.addWeighted(overlay, 0.4, frame, 0.6, 0)  # 40% mask, 60% frame (more transparent)
                             
-                            # Add white bounding box and "BALL" text (same as YOLO detection)
-                            cv2.rectangle(frame, (x_min, y_min), (x_max, y_max), (255, 255, 255), 3)
+                            # Add purple bounding box and "BALL" text (same as YOLO detection)
+                            cv2.rectangle(frame, (x_min, y_min), (x_max, y_max), (226, 43, 138), 3)
                             cv2.putText(frame, "BALL", (x_min, y_min-10),
-                                      cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+                                      cv2.FONT_HERSHEY_SIMPLEX, 0.6, (226, 43, 138), 2)
                             
                             # Update previous ball position for next frame
                             prev_ball_center = ball_center
