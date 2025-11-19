@@ -530,6 +530,7 @@ class HybridTeamBallTracker:
         out = cv2.VideoWriter(str(self.output_path), fourcc, fps, (width, height))
         
         frame_idx = 0
+        prev_ball_center = None  # Track previous ball position for spatial consistency
         
         for stored_frame_idx, boxes_data in self.tracking_results:
             ret, frame = cap.read()
@@ -644,6 +645,18 @@ class HybridTeamBallTracker:
                         if (0.5 <= aspect_ratio <= 2.0 and 
                             mask_area < 15000 and 
                             fill_ratio > 0.4):
+                            
+                            # Check spatial consistency - ball shouldn't teleport
+                            ball_center = ((x_min + x_max) // 2, (y_min + y_max) // 2)
+                            
+                            if prev_ball_center is not None:
+                                distance = np.sqrt((ball_center[0] - prev_ball_center[0])**2 + 
+                                                 (ball_center[1] - prev_ball_center[1])**2)
+                                # At 60fps, ball can move max ~200 pixels/frame (fast GAA plays)
+                                # Skip if it jumps more than 300 pixels (clear teleport/tracking error)
+                                if distance > 300:
+                                    continue  # Reject this mask - ball teleported
+                            
                             # Valid ball mask - overlay Clann green (#016F32)
                             overlay = frame.copy()
                             overlay[mask] = (50, 111, 1)  # Clann Dark Kelly Green (BGR: #016F32)
@@ -653,6 +666,9 @@ class HybridTeamBallTracker:
                             cv2.rectangle(frame, (x_min, y_min), (x_max, y_max), (255, 255, 255), 3)
                             cv2.putText(frame, "BALL", (x_min, y_min-10),
                                       cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+                            
+                            # Update previous ball position for next frame
+                            prev_ball_center = ball_center
             
             # Write frame
             out.write(frame)
